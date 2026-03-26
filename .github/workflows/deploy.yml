@@ -18,19 +18,15 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+    container:
+      image: public.ecr.aws/g6m3a0y9/landscape2
+      options: --user root
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Install git
+        run: apk add git
 
-      - name: Install landscape2
-        run: |
-          curl --proto '=https' --tlsv1.2 -LsSf https://github.com/cncf/landscape2/releases/download/v1.1.0/landscape2-installer.sh | sh
-          # 将安装目录添加到 PATH（如果脚本未自动添加）
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Checkout this repository
+        uses: actions/checkout@v4
 
       - name: Build landscape
         run: |
@@ -41,42 +37,18 @@ jobs:
             --logos-path ./hosted_logos \
             --output-dir /tmp/landscape
 
-      - name: Prepare build branch
+      - name: Commit built landscape to build branch
         run: |
           git config --global safe.directory `pwd`
           git config --global user.name "GitHub Actions"
           git config --global user.email "no-reply@sample-domain.io"
-          
-          # 如果 build 分支不存在，则创建（基于当前提交）
-          git fetch origin build:build || git branch build
-          
-          # 切换到 build 分支
+          git fetch origin build:build
           git checkout build
-          # 确保跟踪远程分支（如果存在）
-          git branch --set-upstream-to=origin/build build || true
-          
-          # 拉取最新远程内容，避免冲突（如果远程存在）
-          git pull origin build --rebase || true
-          
-          # 清空 build 分支的当前内容（保留 .git 目录）
+          git branch --set-upstream-to=origin/build build
+          git pull
           rm -rf *
-          
-          # 复制构建产物
           cp -R /tmp/landscape/* .
-          
-          # 如果有自定义的 index.html 或 404.html，可以在此覆盖
-          cp index.html 404.html   # 根据需要调整
-          
-          # 如果根目录有 .nojekyll 文件，可在此创建
-          # touch .nojekyll
-
-      - name: Commit and push changes
-        run: |
+          cp index.html 404.html
           git add .
-          # 如果有变更才提交
-          if ! git diff --cached --quiet; then
-            git commit -m "Build landscape - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push origin build
-          else
-            echo "No changes to commit"
-          fi
+          git commit -m "Build landscape"
+          git push origin build
