@@ -1,0 +1,1229 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cncf/landscape2/refs/heads/main/docs/config/schema/data.schema.json
+
+landscape:
+  - category:
+    name: Provisioning
+    subcategories:
+      - name: Automation & Configuration
+        items:
+          - item:
+            name: 12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md -
+              OpenYurt
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲主要介绍了智元机器人基于OpenYurt的云边协同实践，属于Provisioning分类中的基础设施自动化配置和管理。演讲中，OpenYurt作为云边协同基础平台，与Dragonfly共同优化了模型分发效率。
+            homepage_url: https://openyurt.io/
+            project: incubating
+            repo_url: https://github.com/openyurtio/openyurt
+            logo: openyurt.svg
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+            extra:
+              lfx_slug: openyurt
+              accepted: '2020-09-08'
+              incubating: '2025-01-10'
+              annual_review_url: https://github.com/cncf/toc/pull/1068
+              annual_review_date: '2023-06-02'
+              dev_stats_url: https://openyurt.devstats.cncf.io/
+              clomonitor_name: openyurt
+      - name: Container Registry
+        items:
+          - item:
+            name: 12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md -
+              Dragonfly
+            description: >-
+              面向运维工程师、架构师和技术管理者。该演讲主要介绍了智元机器人基于OpenYurt的云边协同实践，属于Provisioning分类中的基础设施自动化配置和管理。演讲中，OpenYurt作为云边协同基础平台，与Dragonfly共同优化了模型分发效率。
+            homepage_url: https://d7y.io/
+            project: graduated
+            repo_url: https://github.com/dragonflyoss/dragonfly
+            logo: dragonfly.svg
+            twitter: https://twitter.com/dragonfly_oss
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: d7y
+              accepted: '2018-11-13'
+              incubating: '2020-04-09'
+              graduated: '2025-10-28'
+              dev_stats_url: https://dragonfly.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#dragonfly-logos
+              mailing_list_url: https://groups.google.com/g/dragonfly-developers
+              slack_url: https://cloud-native.slack.com/messages/dragonfly/
+              summary_personas: SREs, Cloud Architects, Platform Engineers, 
+                DevOps Engineer, DevOps practitioners, DevSecOps practitioners
+              summary_tags: image acceleration, file distribution, images, OCI, 
+                container, artefacts, registry, cloud native, p2p, dragonfly, 
+                d7y, nydus
+              summary_use_case: >-
+                Provide efficient, stable, securefile distribution and image acceleration
+                based on p2p technology to be the best practice and standard solution
+                in cloud native architectures. It is widely used in the fields of
+                image distribution, file distribution, log distribution, inference
+                model distribution, etc.
+              summary_business_use_case: >-
+                Reduce back-to-source download traffic and back-to-source requests,
+                improve node idle bandwidth utilization. Solve the problem of insufficient
+                bandwidth or overload to download resources when accessing centralized
+                container registry or file service in large-scale Kubernetes cluster.
+                Based on P2P technology, reduce the bandwidth and load of container
+                registry or file service, and accelerate the download speed of images
+                or files.
+              summary_release_rate: Major release every 2 months.
+              summary_integrations: >-
+                Harbor, Docker, Containerd, CRI-O, Podman, ORAS, Nydus, eStargz, HDFS,
+                AWS S3, Google GCS, Azure Blob, Aliyun OSS, HWC OBS, TensorFlow Serving,
+                Triton Server, TorchServe
+              summary_intro_url: https://www.youtube.com/watch?v=TsECBaAvm-g
+              clomonitor_name: dragonfly
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+      - name: Security & Compliance
+        items: []
+      - name: Key Management
+        items: []
+  - category:
+    name: Runtime
+    subcategories:
+      - name: Cloud Native Storage
+        items: []
+      - name: Container Runtime
+        items:
+          - item:
+            name: 10-基于Karmada + JuiceFS 的 AI 
+              全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md - Virtual Kubelet
+            homepage_url: https://virtual-kubelet.io/
+            project: sandbox
+            repo_url: https://github.com/virtual-kubelet/virtual-kubelet
+            logo: virtual-kubelet.svg
+            twitter: https://twitter.com/virtualkubelet
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 架构师
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: virtualkubelet
+              accepted: '2018-12-04'
+              dev_stats_url: https://virtualkubelet.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#virtual-kubelet-logos
+              clomonitor_name: virtual-kubelet
+              annual_review_url: https://github.com/cncf/toc/pull/1077
+              annual_review_date: '2023-06-08'
+            description: 
+              面向架构师和技术管理者。该演讲介绍了基于Karmada和JuiceFS的全球AI推理引擎架构，其中Virtual 
+              Kubelet作为Runtime层的关键组件，用于抽象和管理异构计算资源。演讲中，Virtual 
+              Kubelet与Karmada协同，实现了多云资源的统一调度和管理。
+      - name: Cloud Native Network
+        items:
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - Cilium
+            homepage_url: https://cilium.io/
+            project: graduated
+            repo_url: https://github.com/cilium/cilium
+            url_for_bestpractices: 
+              https://bestpractices.coreinfrastructure.org/en/projects/1269
+            logo: cilium.svg
+            twitter: https://twitter.com/ciliumproject
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: cilium
+              accepted: '2021-10-13'
+              incubating: '2021-10-13'
+              graduated: '2023-10-11'
+              dev_stats_url: https://cilium.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/incubating.md#cilium-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/cilium
+              slack_url: https://cilium.herokuapp.com/
+              linkedin_url: https://www.linkedin.com/company/cilium/
+              summary_personas: Platform engineers, Network teams, SRE, DevOps 
+                Engineers, Security teams
+              summary_tags: CNI, Networking, Load Balancing, Service Mesh, 
+                Observability, Runtime Security, eBPF, Cluster Mesh, Multicloud
+              summary_use_case: >-
+                Cilium is a networking, observability, and security platform based
+                on eBPF. As a CNI, it provides a flat Layer 3 network, even across
+                clusters. Cilium enforces network policies on L3-L7 using an identity
+                based security model.
+
+
+                Cilium implements distributed load balancing between pods and to external
+                services by replacing kube-proxy. It also has advanced functionality
+                like ingress and egress gateway, bandwidth management, service mesh,
+                and deep network and security observability through Hubble and Tetragon.
+              summary_business_use_case: >-
+                Cilium reduces the operational complexity and cost of running highly
+                scalable and dynamic cloud native environments. By leveraging eBPF,
+                Cilium accelerates and simplifies service connectivity, makes systems
+                observable for easier monitoring and debugging, and provides deep
+                security observability and runtime enforcement.
+              summary_release_rate: 2-3 major releases a year, plus minor and 
+                point releases for bug fixes and security updates
+              summary_integration: Kubernetes, Prometheus, OpenTelemetry, Envoy,
+                Istio, Grafana, cert-manager, SPIFFE
+              clomonitor_name: cilium
+              audits:
+                - date: '2023-02-13'
+                  type: security
+                  url: 
+                    https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumSecurityAudit2022.pdf
+                  vendor: Ada Logics
+                - date: '2023-02-13'
+                  type: fuzzing
+                  url: 
+                    https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumFuzzingAudit2022.pdf
+                  vendor: Ada Logics
+            description: 
+              面向运维工程师和架构师。该演讲主要探讨超大规模集群和多集群场景下的网络挑战与解决方案，属于Runtime分类中的容器网络领域。演讲中，Cilium提供高性能eBPF数据平面，Submariner专注于跨集群L3连接，两者共同解决大规模集群的网络扩展问题。
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - 
+              Submariner
+            description: 
+              面向运维工程师和架构师。该演讲主要探讨超大规模集群和多集群场景下的网络挑战与解决方案，属于Runtime分类中的容器网络领域。演讲中，Cilium提供高性能eBPF数据平面，Submariner专注于跨集群L3连接，两者共同解决大规模集群的网络扩展问题。
+            homepage_url: https://submariner.io
+            project: sandbox
+            repo_url: https://github.com/submariner-io/submariner
+            logo: submariner.svg
+            twitter: https://twitter.com/submarinerio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: submariner
+              accepted: '2021-04-28'
+              clomonitor_name: submariner
+              annual_review_url: https://github.com/cncf/toc/pull/1115
+              annual_review_date: '2023-07-11'
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+  - category:
+    name: Orchestration & Management
+    subcategories:
+      - name: Scheduling & Orchestration
+        items:
+          - item:
+            name: 06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 
+              实践-王纪飞（密瓜智能），James Deng（第四范式）.md - hami
+            description: 面向开发工程师和运维工程师。该演讲聚焦于Kubernetes DRA（Dynamic Resource 
+              Allocation）机制在GPU调度中的应用，属于编排与管理分类。演讲以HAMi项目为核心，展示了DRA如何替代传统Device 
+              Plugin实现更精细的GPU资源管理。
+            homepage_url: https://project-hami.github.io/HAMi/
+            project: sandbox
+            repo_url: https://github.com/Project-HAMi/HAMi
+            logo: hami.svg
+            open_source: true
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: hami
+              accepted: '2024-08-21'
+              clomonitor_name: hami
+          - item:
+            name: 04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md - Volcano
+            homepage_url: https://volcano.sh/
+            project: incubating
+            repo_url: https://github.com/volcano-sh/volcano
+            logo: volcano.svg
+            twitter: https://twitter.com/volcano_sh
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+            extra:
+              lfx_slug: Volcano
+              accepted: '2020-04-09'
+              dev_stats_url: https://volcano.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#volcano
+              incubating: '2022-03-21'
+              clomonitor_name: volcano
+              ai: true
+            description: 
+              面向架构师和运维工程师。该演讲聚焦大模型推理在K8s上的编排与调度优化，属于编排与管理分类。演讲中，Kthena作为编排框架，依赖Volcano提供拓扑感知和Gang调度能力。
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - 
+              Kubernetes
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+            homepage_url: https://kubernetes.io/
+            project: graduated
+            repo_url: https://github.com/kubernetes/kubernetes
+            logo: kubernetes.svg
+            twitter: https://twitter.com/kubernetesio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: k8s
+              accepted: '2016-03-10'
+              incubating: '2016-03-10'
+              graduated: '2018-03-06'
+              dev_stats_url: https://k8s.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/kubernetes
+              blog_url: http://blog.kubernetes.io/
+              mailing_list_url: 
+                https://groups.google.com/forum/#!forum/kubernetes-dev
+              slack_url: http://slack.k8s.io/
+              youtube_url: 
+                https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
+              clomonitor_name: kubernetes
+              audits:
+                - date: '2019-08-06'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2019/findings
+                  vendor: Trail of Bits and Atredis Partners
+                - date: '2023-04-19'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2021-2022/findings
+                  vendor: NCC Group
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - Karmada
+            homepage_url: https://karmada.io/
+            project: incubating
+            repo_url: https://github.com/karmada-io/karmada
+            logo: karmada.svg
+            twitter: https://x.com/karmada_io
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: karmada
+              accepted: '2021-09-14'
+              incubating: '2023-12-12'
+              annual_review_url: https://github.com/cncf/toc/pull/954
+              annual_review_date: '2022-10-29'
+              dev_stats_url: https://karmada.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#karmada-logos
+              mailing_list_url: https://groups.google.com/forum/#!forum/karmada
+              slack_url: https://cloud-native.slack.com/messages/karmada
+              chat_channel: '#karmada'
+              clomonitor_name: karmada
+              summary_personas: Cloud Architects, Platform Engineers, DevOps 
+                Engineer, DevOps practitioners, DevSecOps practitioners
+              summary_tags: multi-cloud, hybrid cloud
+              summary_use_case: >-
+                Karmada (Kubernetes Armada) is a Kubernetes management system that
+                enables you to run your cloud-native applications across multiple
+                Kubernetes clusters and clouds, with no changes to your applications.
+                By speaking Kubernetes-native APIs and providing advanced scheduling  capabilities,
+                Karmada enables truly open, multi-cloud Kubernetes. Karmada aims to
+                provide turnkey automation for multi-cluster application management
+                in multi-cloud and hybrid cloud scenarios, with key  features such
+                as centralized multi-cloud management, high availability, failure
+                recovery, and traffic scheduling.
+              summary_business_use_case: >-
+                Managing workloads across diverse enterprise environments is complex.
+                Karmada, a multi-cluster orchestration system, provides a unified  control
+                plane for Kubernetes clusters. It enables seamless workload deployment,
+                scaling, and management across on-premises and multi-cloud  setups,
+                addressing operational challenges, reducing vendor lock-in, and enhancing
+                disaster recovery and infrastructure efficiency.
+              summary_release_rate: Every 3 months
+              summary_integrations: Volcano, Kubeflow, Kyverno, Pytorch, 
+                TensorFlow, Flink, Spark, OpenKruise, Grafana, Prometheus, Argo,
+                Flux, Istio, Filebeat, Submariner, Velero, etc.
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - 
+              Clusternet
+            homepage_url: https://clusternet.io
+            project: sandbox
+            repo_url: https://github.com/clusternet/clusternet
+            logo: clusternet.svg
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: clusternet
+              accepted: '2023-03-07'
+              dev_stats_url: https://clusternet.devstats.cncf.io/
+              slack_url: https://cloud-native.slack.com/messages/clusternet
+              clomonitor_name: clusternet
+            description: '面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration
+              & Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。'
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - KEDA
+            homepage_url: https://keda.sh/
+            project: graduated
+            repo_url: https://github.com/kedacore/keda
+            logo: keda.svg
+            twitter: https://twitter.com/kedaorg
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: KEDA
+              accepted: '2020-03-12'
+              incubating: '2021-08-18'
+              graduated: '2023-08-22'
+              dev_stats_url: https://keda.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#keda-logos
+              blog_url: https://keda.sh/blog
+              slack_url: https://kubernetes.slack.com/archives/CKZJ36A5D
+              youtube_url: 
+                https://www.youtube.com/playlist?list=PLvjRi5R9GQfASIcL4MLTfg2ZOoBdIi5Kq
+              clomonitor_name: keda
+              audits:
+                - date: '2023-02-02'
+                  type: security
+                  url: 
+                    https://github.com/trailofbits/publications/blob/master/reviews/2023-01-keda-securityreview.pdf
+                  vendor: Trail of Bits
+              summary_release_rate: Every 4 months
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - 
+              Clusterpedia
+            description: >-
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+            homepage_url: https://clusterpedia.io
+            project: sandbox
+            repo_url: https://github.com/clusterpedia-io/clusterpedia
+            logo: clusterpedia.svg
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: clusterpedia
+              accepted: '2022-06-17'
+              dev_stats_url: https://clusterpedia.devstats.cncf.io/
+              slack_url: https://cloud-native.slack.com/messages/clusterpedia
+              clomonitor_name: clusterpedia
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - Volcano
+            homepage_url: https://volcano.sh/
+            project: incubating
+            repo_url: https://github.com/volcano-sh/volcano
+            logo: volcano.svg
+            twitter: https://twitter.com/volcano_sh
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: Volcano
+              accepted: '2020-04-09'
+              dev_stats_url: https://volcano.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#volcano
+              incubating: '2022-03-21'
+              clomonitor_name: volcano
+              ai: true
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+          - item:
+            name: 02-Pythonic Argo_ Building Maintainable and Dynamic ML 
+              Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md - Kubeflow
+            description: 
+              面向开发工程师和架构师。该演讲主要介绍使用Python构建可维护的ML工作流，属于编排与管理分类。演讲中，Argo 
+              Workflows作为底层编排引擎，与Kubeflow Pipelines等MLOps框架协同，实现ML管线的自动化。
+            homepage_url: https://kubeflow.org
+            project: incubating
+            repo_url: https://github.com/kubeflow/kubeflow
+            logo: kubeflow.svg
+            twitter: https://twitter.com/kubeflow
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: kubeflow
+              accepted: '2023-07-25'
+              incubating: '2023-07-25'
+              blog_url: https://blog.kubeflow.org
+              slack_url: http://slack.cncf.io/
+              mailing_list_url: https://groups.google.com/g/kubeflow-discuss
+              linkedin_url: https://www.linkedin.com/company/kubeflow
+              dev_stats_url: https://kubeflow.devstats.cncf.io/
+              clomonitor_name: kubeflow
+              ai: true
+              other_links:
+                - name: Twitter
+                  url: https://x.com/kubeflow
+                - name: Bluesky
+                  url: https://bsky.app/profile/kubefloworg.bsky.social
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+          - item:
+            name: 10-基于Karmada + JuiceFS 的 AI 
+              全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md - Karmada
+            homepage_url: https://karmada.io/
+            project: incubating
+            repo_url: https://github.com/karmada-io/karmada
+            logo: karmada.svg
+            twitter: https://x.com/karmada_io
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+            extra:
+              lfx_slug: karmada
+              accepted: '2021-09-14'
+              incubating: '2023-12-12'
+              annual_review_url: https://github.com/cncf/toc/pull/954
+              annual_review_date: '2022-10-29'
+              dev_stats_url: https://karmada.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/sandbox.md#karmada-logos
+              mailing_list_url: https://groups.google.com/forum/#!forum/karmada
+              slack_url: https://cloud-native.slack.com/messages/karmada
+              chat_channel: '#karmada'
+              clomonitor_name: karmada
+              summary_personas: Cloud Architects, Platform Engineers, DevOps 
+                Engineer, DevOps practitioners, DevSecOps practitioners
+              summary_tags: multi-cloud, hybrid cloud
+              summary_use_case: >-
+                Karmada (Kubernetes Armada) is a Kubernetes management system that
+                enables you to run your cloud-native applications across multiple
+                Kubernetes clusters and clouds, with no changes to your applications.
+                By speaking Kubernetes-native APIs and providing advanced scheduling  capabilities,
+                Karmada enables truly open, multi-cloud Kubernetes. Karmada aims to
+                provide turnkey automation for multi-cluster application management
+                in multi-cloud and hybrid cloud scenarios, with key  features such
+                as centralized multi-cloud management, high availability, failure
+                recovery, and traffic scheduling.
+              summary_business_use_case: >-
+                Managing workloads across diverse enterprise environments is complex.
+                Karmada, a multi-cluster orchestration system, provides a unified  control
+                plane for Kubernetes clusters. It enables seamless workload deployment,
+                scaling, and management across on-premises and multi-cloud  setups,
+                addressing operational challenges, reducing vendor lock-in, and enhancing
+                disaster recovery and infrastructure efficiency.
+              summary_release_rate: Every 3 months
+              summary_integrations: Volcano, Kubeflow, Kyverno, Pytorch, 
+                TensorFlow, Flink, Spark, OpenKruise, Grafana, Prometheus, Argo,
+                Flux, Istio, Filebeat, Submariner, Velero, etc.
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理调度平台实践，属于编排与管理分类。演讲中，Karmada作为核心编排框架，与自研的BRS抽象层和调度系统协同，构建了全球异构资源统一管理平台。
+          - item:
+            name: 03-Valkey on Kubernetes_ High-Performance, Low-Latency 
+              Deployments for Scalable Clusters.md - Kubernetes
+            description: 
+              面向运维工程师和架构师。该演讲主要介绍了Valkey在Kubernetes上的部署和管理实践，属于编排与管理分类。演讲中，Kubernetes作为核心编排平台，结合StatefulSets、Operators等原生资源来管理Valkey集群。
+            homepage_url: https://kubernetes.io/
+            project: graduated
+            repo_url: https://github.com/kubernetes/kubernetes
+            logo: kubernetes.svg
+            twitter: https://twitter.com/kubernetesio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+            extra:
+              lfx_slug: k8s
+              accepted: '2016-03-10'
+              incubating: '2016-03-10'
+              graduated: '2018-03-06'
+              dev_stats_url: https://k8s.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/kubernetes
+              blog_url: http://blog.kubernetes.io/
+              mailing_list_url: 
+                https://groups.google.com/forum/#!forum/kubernetes-dev
+              slack_url: http://slack.k8s.io/
+              youtube_url: 
+                https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
+              clomonitor_name: kubernetes
+              audits:
+                - date: '2019-08-06'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2019/findings
+                  vendor: Trail of Bits and Atredis Partners
+                - date: '2023-04-19'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2021-2022/findings
+                  vendor: NCC Group
+          - item:
+            name: 07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md - 
+              Kubernetes
+            description: 
+              面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于编排与管理分类。演讲中，Kubernetes作为基础编排平台，Koordinator（或其类似技术）用于增强混部调度与QoS保障。
+            homepage_url: https://kubernetes.io/
+            project: graduated
+            repo_url: https://github.com/kubernetes/kubernetes
+            logo: kubernetes.svg
+            twitter: https://twitter.com/kubernetesio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+            extra:
+              lfx_slug: k8s
+              accepted: '2016-03-10'
+              incubating: '2016-03-10'
+              graduated: '2018-03-06'
+              dev_stats_url: https://k8s.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/kubernetes
+              blog_url: http://blog.kubernetes.io/
+              mailing_list_url: 
+                https://groups.google.com/forum/#!forum/kubernetes-dev
+              slack_url: http://slack.k8s.io/
+              youtube_url: 
+                https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
+              clomonitor_name: kubernetes
+              audits:
+                - date: '2019-08-06'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2019/findings
+                  vendor: Trail of Bits and Atredis Partners
+                - date: '2023-04-19'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2021-2022/findings
+                  vendor: NCC Group
+          - item:
+            name: 07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md - 
+              Koordinator
+            description: 
+              面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于编排与管理分类。演讲中，Kubernetes作为基础编排平台，Koordinator（或其类似技术）用于增强混部调度与QoS保障。
+            homepage_url: https://koordinator.sh
+            repo_url: https://github.com/koordinator-sh/koordinator
+            logo: Koordinator.svg
+            crunchbase: https://www.crunchbase.com/organization/alibaba-cloud
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+            project: sandbox
+            extra:
+              lfx_slug: koordinator
+              accepted: '2024-04-16'
+              clomonitor_name: koordinator
+          - item:
+            name: 08-Gang Scheduling in Kubernetes - What’s Happening and What 
+              Comes Next-范宝发（DaoCloud）.md - Kubernetes
+            description: 面向开发工程师和运维工程师。该演讲深入探讨Kubernetes中的Gang 
+              Scheduling机制，属于编排与管理分类的核心调度功能。演讲聚焦Kubernetes原生调度器增强，通过Workload 
+              API和PodGroup实现批量Pod协同调度。
+            homepage_url: https://kubernetes.io/
+            project: graduated
+            repo_url: https://github.com/kubernetes/kubernetes
+            logo: kubernetes.svg
+            twitter: https://twitter.com/kubernetesio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            second_path:
+              - case / false
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+            extra:
+              lfx_slug: k8s
+              accepted: '2016-03-10'
+              incubating: '2016-03-10'
+              graduated: '2018-03-06'
+              dev_stats_url: https://k8s.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/kubernetes
+              blog_url: http://blog.kubernetes.io/
+              mailing_list_url: 
+                https://groups.google.com/forum/#!forum/kubernetes-dev
+              slack_url: http://slack.k8s.io/
+              youtube_url: 
+                https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
+              clomonitor_name: kubernetes
+              audits:
+                - date: '2019-08-06'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2019/findings
+                  vendor: Trail of Bits and Atredis Partners
+                - date: '2023-04-19'
+                  type: security
+                  url: 
+                    https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2021-2022/findings
+                  vendor: NCC Group
+      - name: Coordination & Service Discovery
+        items:
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - etcd
+            homepage_url: https://etcd.io/
+            project: graduated
+            repo_url: https://github.com/etcd-io/etcd
+            logo: etcd.svg
+            twitter: https://twitter.com/etcdio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: etcd
+              accepted: '2018-12-11'
+              incubating: '2018-12-11'
+              graduated: '2020-11-24'
+              dev_stats_url: https://etcd.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#etcd-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/etcd
+              mailing_list_url: 
+                https://groups.google.com/forum/?hl=en#!forum/etcd-dev
+              slack_url: http://slack.k8s.io/
+              chat_channel: '#etcd'
+              clomonitor_name: etcd
+              audits:
+                - date: '2020-08-05'
+                  type: security
+                  url: 
+                    https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf
+                  vendor: Trail of Bits
+                - date: '2022-03-11'
+                  type: fuzzing
+                  url: 
+                    https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF
+                  vendor: ADA Logics
+              summary_personas: Architects, Platform Engineers, SREs
+              summary_tags: distributed, key-value, consistent, datastore, 
+                reliability
+              summary_use_case: >-
+                Etcd is a distributed, reliable key-value store for the most critical
+                data of a distributed system. By using etcd, developers can ensure
+                that their applications have access to up-to-date configuration data,
+                even as they scale up or down, and can maintain consistency, fault
+                tolerance and coordination across multiple instances of the application.
+              summary_business_use_case: >-
+                Etcd can be used by businesses to manage the configuration data and
+                coordination needs of their applications, ensuring consistent and
+                reliable performance at scale.
+              summary_release_rate: Major or Minor release approximately every 2
+                years, and patch release every 1-3 months
+              summary_integrations: >-
+                Due to etcd's flexible and extensible architecture it has been integrated
+                as a data store for many projects such as Kubernetes, CoreDNS and
+                Hashicorp Vault.
+              summary_intro_url: https://etcd.io/docs/v3.6/learning/
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - CoreDNS
+            homepage_url: https://coredns.io/
+            project: graduated
+            repo_url: https://github.com/coredns/coredns
+            logo: core-dns.svg
+            twitter: https://twitter.com/corednsio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: coredns
+              accepted: '2017-02-27'
+              incubating: '2018-02-26'
+              graduated: '2019-01-24'
+              dev_stats_url: https://coredns.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#coredns-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/coredns
+              blog_url: https://coredns.io/blog/
+              mailing_list_url: 
+                https://groups.google.com/forum/#!forum/coredns-discuss
+              slack_url: https://cloud-native.slack.com/messages/coredns/
+              youtube_url: 
+                https://www.youtube.com/channel/UCbWRJZxiaQ8twm6sh7UymoQ
+              clomonitor_name: core-dns
+              audits:
+                - date: '2018-02-03'
+                  type: security
+                  url: https://coredns.io/assets/DNS-01-report.pdf
+                  vendor: Cure53
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+          - item:
+            name: 11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md - etcd
+            homepage_url: https://etcd.io/
+            project: graduated
+            repo_url: https://github.com/etcd-io/etcd
+            logo: etcd.svg
+            twitter: https://twitter.com/etcdio
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: etcd
+              accepted: '2018-12-11'
+              incubating: '2018-12-11'
+              graduated: '2020-11-24'
+              dev_stats_url: https://etcd.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#etcd-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/etcd
+              mailing_list_url: 
+                https://groups.google.com/forum/?hl=en#!forum/etcd-dev
+              slack_url: http://slack.k8s.io/
+              chat_channel: '#etcd'
+              clomonitor_name: etcd
+              audits:
+                - date: '2020-08-05'
+                  type: security
+                  url: 
+                    https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf
+                  vendor: Trail of Bits
+                - date: '2022-03-11'
+                  type: fuzzing
+                  url: 
+                    https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF
+                  vendor: ADA Logics
+              summary_personas: Architects, Platform Engineers, SREs
+              summary_tags: distributed, key-value, consistent, datastore, 
+                reliability
+              summary_use_case: >-
+                Etcd is a distributed, reliable key-value store for the most critical
+                data of a distributed system. By using etcd, developers can ensure
+                that their applications have access to up-to-date configuration data,
+                even as they scale up or down, and can maintain consistency, fault
+                tolerance and coordination across multiple instances of the application.
+              summary_business_use_case: >-
+                Etcd can be used by businesses to manage the configuration data and
+                coordination needs of their applications, ensuring consistent and
+                reliable performance at scale.
+              summary_release_rate: Major or Minor release approximately every 2
+                years, and patch release every 1-3 months
+              summary_integrations: >-
+                Due to etcd's flexible and extensible architecture it has been integrated
+                as a data store for many projects such as Kubernetes, CoreDNS and
+                Hashicorp Vault.
+              summary_intro_url: https://etcd.io/docs/v3.6/learning/
+            description: 
+              面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化，属于编排与管理分类中的核心存储组件。演讲聚焦etcd自身的内核级优化，未涉及与其他项目的集成关系。
+            second_path:
+              - case / true
+              - deep / 5
+              - audience / 混合
+              - diffcult / 5
+              - deployment / 3
+      - name: Remote Procedure Call
+        items: []
+      - name: Service Proxy
+        items: []
+      - name: API Gateway
+        items: []
+      - name: Service Mesh
+        items:
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - Istio
+            description: 
+              面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & 
+              Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。
+            homepage_url: https://istio.io/
+            project: graduated
+            repo_url: https://github.com/istio/istio
+            logo: istio.svg
+            twitter: https://twitter.com/IstioMesh
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              lfx_slug: istio
+              accepted: '2022-09-30'
+              incubating: '2022-09-30'
+              graduated: '2023-07-12'
+              dev_stats_url: https://istio.devstats.cncf.io/
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/istio
+              blog_url: https://istio.io/blog/
+              slack_url: https://slack.istio.io/
+              summary_business_use_case: Security, Traffic Management, 
+                Observability, Policy Enforcement.
+              summary_integrations: 
+                https://istio.io/latest/docs/ops/integrations/
+              summary_intro_url: https://www.youtube.com/watch?v=hkR1M6qwpnw
+              summary_personas: SREs, DevOps Engineers, Architects, Platform 
+                Engineers
+              summary_release_rate: Every 3 months
+              summary_tags: observability, Service Mesh, mTLS, traffic 
+                management, multi-cluster, load balancing, policy, security, 
+                extensibility
+              summary_use_case: >-
+                Istio addresses the challenges developers and operators face with
+                a distributed or microservices architecture. Whether you're building
+                from scratch or migrating existing applications to cloud native, Istio
+                can help. Read more at: https://istio.io/latest/about/solutions/
+              youtube_url: https://www.youtube.com/c/Istio
+              clomonitor_name: istio
+              audits:
+                - date: '2023-01-30'
+                  type: security
+                  url: 
+                    https://istio.io/latest/blog/2023/ada-logics-security-assessment/Istio%20audit%20report%20-%20ADA%20Logics%20-%202023-01-30%20-%20v1.0.pdf
+                  vendor: ADA Logics
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 3
+  - category:
+    name: App Definition and Development
+    subcategories:
+      - name: Database
+        items: []
+      - name: Streaming & Messaging
+        items: []
+      - name: Application Definition & Image Build
+        items: []
+      - name: Continuous Integration & Delivery
+        items: []
+  - category:
+    name: Platform
+    subcategories:
+      - name: Certified Kubernetes - Distribution
+        items: []
+      - name: Certified Kubernetes - Hosted
+        items: []
+      - name: Certified Kubernetes - Installer
+        items: []
+      - name: Certified Kubernetes - AI Platform
+        items: []
+      - name: PaaS/Container Service
+        items: []
+  - category:
+    name: Serverless
+    subcategories:
+      - name: Security
+        items: []
+      - name: Tools
+        items: []
+      - name: Framework
+        items: []
+      - name: Hosted Platform
+        items: []
+      - name: Installable Platform
+        items: []
+  - category:
+    name: Observability and Analysis
+    subcategories:
+      - name: Feature Flagging
+        items: []
+      - name: Chaos Engineering
+        items: []
+      - name: Continuous Optimization
+        items: []
+      - name: Observability
+        items:
+          - item:
+            name: 07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md - 
+              Prometheus
+            homepage_url: https://prometheus.io/
+            project: graduated
+            repo_url: https://github.com/prometheus/prometheus
+            logo: prometheus.svg
+            twitter: https://twitter.com/PrometheusIO
+            crunchbase: 
+              https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              lfx_slug: prometheus_del
+              accepted: '2016-05-09'
+              incubating: '2016-05-09'
+              graduated: '2018-08-09'
+              dev_stats_url: https://prometheus.devstats.cncf.io/
+              artwork_url: 
+                https://github.com/cncf/artwork/blob/master/examples/graduated.md#prometheus-logos
+              stack_overflow_url: 
+                https://stackoverflow.com/questions/tagged/prometheus
+              blog_url: https://prometheus.io/blog/
+              mailing_list_url: https://prometheus.io/community/
+              youtube_url: 
+                https://www.youtube.com/channel/UC4pLFely0-Odea4B2NL1nWA
+              slack_url: https://libera.chat/
+              chat_channel: '#prometheus'
+              summary_personas: Cluster Administrators, Developers, SREs, 
+                Platform Engineers, Network Engineers
+              summary_tags: monitoring, alerting, observability, instrumentation
+              summary_use_case: metrics-based monitoring and alerting
+              summary_release_rate: every 6 weeks for prometheus/prometheus
+              summary_integrations: >-
+                See [exporters](https://prometheus.io/docs/instrumenting/exporters/)
+                and [clientlibs](https://prometheus.io/docs/instrumenting/clientlibs/)
+                plus many service discoveries.
+              clomonitor_name: prometheus
+              audits:
+                - date: '2018-06-11'
+                  type: security
+                  url: 
+                    https://prometheus.io/assets/downloads/2018-06-11--cure53_security_audit.pdf
+                  vendor: Cure53
+                - date: '2020-07-21'
+                  type: security
+                  url: 
+                    https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf
+                  vendor: Cure53
+            description: 
+              面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于可观测性分类，通过Prometheus等工具采集业务、系统及微架构指标实现全栈可观测。
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 混合
+              - diffcult / 4
+              - deployment / 4
+  - category:
+    name: Special
+    subcategories:
+      - name: Kubernetes Certified Service Provider
+        items: []
+      - name: Kubernetes and Cloud Native Training Partner
+        items: []
+      - name: Certified CNFs
+        items: []
+  - category:
+    name: CNCF Members
+    subcategories:
+      - name: Platinum
+        items: []
+      - name: Gold
+        items: []
+      - name: Silver
+        items: []
+      - name: Academic
+        items: []
+      - name: Nonprofit
+        items: []
+      - name: End User Supporter and Contributor
+        items: []
+  - category:
+    name: Wasm
+    subcategories:
+      - name: Languages
+        items: []
+      - name: Runtimes
+        items: []
+      - name: Application Frameworks
+        items: []
+      - name: Edge/Bare metal
+        items: []
+      - name: AI/Machine Learning
+        items: []
+      - name: Embedded Functions
+        items: []
+      - name: Tooling
+        items: []
+      - name: Orchestration & Management
+        items: []
+      - name: Hosted Platforms
+        items: []
+      - name: Decentralized Platforms
+        items: []
+      - name: Debugging & Observability
+        items: []
+      - name: Packaging, Registries & Application Delivery
+        items: []
+  - category:
+    name: CNAI
+    subcategories:
+      - name: General Orchestration
+        items:
+          - item:
+            name: 01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md - Kueue
+            description: 
+              面向架构师和技术管理者。该演讲探讨了超大规模集群和多集群架构的挑战与解决方案，属于云原生应用基础设施分类。演讲中，KubeBrain作为etcd替代方案，与Clusterpedia、Submariner、Cilium等项目共同构建了大规模集群的优化体系。
+            repo_url: https://github.com/kubernetes-sigs/kueue
+            logo: ./kueue.svg
+            unnamed_organization: true
+            homepage_url: https://kueue.sigs.k8s.io/
+            second_path:
+              - case / true
+              - deep / 4
+              - audience / 架构师
+              - diffcult / 4
+              - deployment / 3
+      - name: ML Serving
+        items: []
+      - name: CI/CD - Delivery
+        items: []
+      - name: Data Science
+        items: []
+      - name: Distributed Training
+        items: []
+      - name: Workload Observability
+        items: []
+      - name: Model/LLM Observability
+        items: []
+      - name: AutoML
+        items: []
+      - name: Vector Databases
+        items: []
+      - name: Data Architecture
+        items: []
+      - name: Governance, Policy & Security
+        items: []
+      - name: Open Enterprise AI Blueprints
+        items: []
+  - category:
+    name: case
+    subcategories:
+      - name: Have
+        items: []
+      - name: Not
+        items: []
+  - category:
+    name: deep
+    subcategories:
+      - name: "1 - 入门"
+        items: []
+      - name: "2 - 基础"
+        items: []
+      - name: "3 - 中级"
+        items: []
+      - name: "4 - 高级"
+        items: []
+      - name: "5 - 深度"
+        items: []
+  - category:
+    name: audience
+    subcategories:
+      - name: "运维工程师"
+        items: []
+      - name: "开发工程师"
+        items: []
+      - name: "架构师"
+        items: []
+      - name: "技术管理者"
+        items: []
+      - name: "混合"
+        items: []
+  - category:
+    name: diffcult
+    subcategories:
+      - name: "1 - 简单"
+        items: []
+      - name: "2 - 较低"
+        items: []
+      - name: "3 - 中等"
+        items: []
+      - name: "4 - 较高"
+        items: []
+      - name: "5 - 复杂"
+        items: []
+  - category:
+    name: deployment
+    subcategories:
+      - name: "1 - 理论性强"
+        items: []
+      - name: "2 - 较难落地"
+        items: []
+      - name: "3 - 一般"
+        items: []
+      - name: "4 - 易实践"
+        items: []
+      - name: "5 - 即学即用"
+        items: []

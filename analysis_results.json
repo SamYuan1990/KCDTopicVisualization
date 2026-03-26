@@ -1,0 +1,2242 @@
+[
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": true,
+      "major_project": "hami, k8s-dra-driver",
+      "description": "面向运维工程师和架构师。该演讲主要介绍了DRA（Dynamic Resource Allocation）在GPU资源调度中的实践，属于Provisioning分类中的基础设施自动配置范畴。演讲中，HAMi-DRA作为核心调度框架，与k8s-dra-driver协同实现了GPU资源的精细化管理和自动化分配。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi-DRA, k8s-dra-driver",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了DRA（Dynamic Resource Allocation）在GPU调度中的实践，属于Runtime分类中的容器运行时资源管理。演讲中，HAMi-DRA作为DRA实现框架，与k8s-dra-driver协同工作，共同构建了高效的GPU资源调度体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "hami",
+      "description": "面向开发工程师和运维工程师。该演讲聚焦于Kubernetes DRA（Dynamic Resource Allocation）机制在GPU调度中的应用，属于编排与管理分类。演讲以HAMi项目为核心，展示了DRA如何替代传统Device Plugin实现更精细的GPU资源管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi-DRA, k8s-dra-driver",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了HAMi DRA在GPU调度中的应用，属于App Definition and Development分类。演讲中，HAMi-DRA作为DRA实现，与k8s-dra-driver共同构建了GPU资源管理方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "开发工程师",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi-DRA, k8s-dra-driver",
+      "description": "面向运维工程师和架构师。该演讲深入探讨了Kubernetes DRA（Device Resource Access）机制在GPU调度中的应用，属于Platform分类中的设备管理领域。演讲中，HAMi-DRA作为DRA实现，与k8s-dra-driver共同构建了完整的GPU资源管理解决方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了HAMi项目在DRA（Dynamic Resource Allocation）领域的实践，属于Special分类。演讲展示了HAMi如何通过DRA驱动和Webhook自动化，实现GPU资源的精细化管理与调度优化。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和运维工程师。该演讲主要介绍HAMi DRA在Kubernetes GPU调度中的实践，属于CNCF Members分类中的Kubernetes项目。演讲中，HAMi DRA作为Kubernetes DRA机制的扩展实现，与Kubernetes原生调度器协同工作，提升了GPU资源管理能力。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了HAMi项目在DRA（Device Resource Access）框架下的GPU调度实践，属于CNAI分类中的AI/ML基础设施领域。演讲展示了HAMi如何通过DRA驱动和Webhook自动化，实现从传统Device Plugin到现代资源管理范式的升级。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了Kubernetes DRA（动态资源分配）机制在GPU调度中的应用，属于Kubernetes分类。演讲中，Kubernetes DRA作为核心机制，与HAMi项目结合实现了GPU资源的精细化管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi-DRA, k8s-dra-driver",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了Kubernetes DRA（Device Resource Access）机制在GPU调度中的应用，属于容器运行时与编排分类。演讲中，HAMi-DRA作为DRA驱动实现，与k8s-dra-driver共同构建了GPU资源管理解决方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了Kubernetes DRA（动态资源分配）机制在GPU调度中的应用，属于调度与编排分类。演讲中，HAMi作为DRA驱动实现，与Kubernetes DRA框架协同工作，实现了GPU资源的精细化管理和自动化调度。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨了DRA（Dynamic Resource Allocation）在GPU调度中的实践，属于diffcult分类。演讲以HAMi项目为核心，展示了如何通过DRA驱动和Webhook自动化实现GPU资源的精细化管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "06-从 Device Plugin 到 DRA：GPU 调度范式升级与 HAMi DRA 实践-王纪飞（密瓜智能），James Deng（第四范式）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "HAMi-DRA, k8s-dra-driver",
+      "description": "面向开发工程师和运维工程师。该演讲主要介绍了DRA（Dynamic Resource Allocation）技术在GPU调度中的应用实践，属于deployment分类。演讲中，HAMi-DRA作为核心调度框架，与k8s-dra-driver协同实现了GPU资源的精细化管理和自动化部署。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Volcano",
+      "description": "面向架构师和运维工程师。该演讲聚焦大模型推理在K8s上的编排与调度优化，属于编排与管理分类。演讲中，Kthena作为编排框架，依赖Volcano提供拓扑感知和Gang调度能力。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kthena, Volcano",
+      "description": "面向架构师和开发工程师。该演讲主要介绍了Kthena和Volcano在大模型推理编排与调度中的应用，属于App Definition and Development分类。演讲中，Kthena负责声明式编排和流量调度，Volcano提供拓扑感知和高级调度能力，两者协同优化分布式推理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Volcano",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Kthena和Volcano的大模型推理编排平台实践，属于Platform分类。演讲中，Kthena作为编排框架，依赖Volcano提供底层调度能力，共同构建分布式推理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 5,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kthena, Volcano",
+      "description": "面向架构师和运维工程师。该演讲主要介绍了Kthena和Volcano在云原生大模型推理编排与调度中的实践，属于Special分类。演讲中，Kthena作为编排与流量调度大脑，与Volcano的调度算法协同，共同优化分布式推理性能。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Volcano",
+      "description": "面向架构师和运维工程师。该演讲主要介绍了Kthena与Volcano在大模型推理编排中的协同应用，属于CNCF Members分类。演讲中，Kthena作为编排框架，依赖Volcano提供底层调度能力，共同解决分布式推理的挑战。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Volcano",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了Kthena与Volcano在大模型推理编排调度中的协同应用，属于CNAI分类。演讲中，Kthena作为编排调度框架，依赖Volcano提供底层拓扑感知和Gang调度能力。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 5,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Volcano",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了Kthena与Volcano在大模型推理编排中的协同应用，属于调度与编排分类。演讲中，Kthena负责推理编排与流量调度，Volcano提供拓扑感知和Gang调度能力，两者共同优化分布式推理性能。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kthena, Volcano",
+      "description": "面向架构师和开发工程师。该演讲主要介绍了Kthena和Volcano在大模型推理编排与调度中的应用，属于编排与调度分类。演讲中，Kthena负责LLM声明式编排和智能流量调度，Volcano提供拓扑感知和Gang调度能力，两者协同优化分布式推理性能。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Volcano",
+      "description": "面向架构师和运维工程师。该演讲主要介绍了Kthena与Volcano在大模型推理编排中的协同应用，属于调度与编排分类。演讲中，Kthena负责声明式编排和流量调度，Volcano提供拓扑感知和Gang调度能力，两者共同构建分布式推理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kthena, Volcano",
+      "description": "面向架构师和开发工程师。该演讲主要介绍了Kthena和Volcano在大模型推理编排与调度中的协同应用，属于调度与编排分类。演讲中，Kthena负责声明式编排和流量调度，Volcano提供拓扑感知和Gang调度能力，两者共同解决分布式大模型部署的复杂性问题。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "04-云原生架构下分布式大模型推理的编排与调度实践-孙大光（华为）、鲁卫军（华为）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kthena,Volcano",
+      "description": "面向架构师和运维工程师。该演讲主要介绍了Kthena和Volcano在大模型推理场景下的编排与调度实践，属于部署分类。演讲中，Kthena作为编排大脑，与Volcano的调度能力协同，共同解决分布式大模型部署难题。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Cilium, Submariner",
+      "description": "面向运维工程师和架构师。该演讲主要探讨超大规模集群和多集群场景下的网络挑战与解决方案，属于Runtime分类中的容器网络领域。演讲中，Cilium提供高性能eBPF数据平面，Submariner专注于跨集群L3连接，两者共同解决大规模集群的网络扩展问题。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes, etcd, Karmada, Clusternet, KEDA, Clusterpedia, Volcano, CoreDNS, Istio",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的编排与管理挑战，属于Orchestration & Management分类。演讲中，Kubernetes作为核心编排平台，与etcd、Karmada、Clusternet等项目共同构建了大规模集群的管理体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "KubeBrain, Clusterpedia, Kueue, Volcano, YuniKorn, Karpenter, KEDA, KWOK, Kubemark, Harbor, Submariner, Cilium, Clusternet, Liqo, Karmada",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模Kubernetes集群和多集群架构的挑战与解决方案，属于Platform分类。演讲中，KubeBrain作为etcd替代方案，与Clusterpedia、Karpenter等工具共同构建了大规模集群管理平台，Submariner、Cilium等则解决了多集群网络连接问题。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "KubeBrain, Clusterpedia, Kueue, Volcano, YuniKorn, Submariner, Cilium, Clusternet, Liqo",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群场景下的性能瓶颈与解决方案，属于Special分类。演讲中，KubeBrain作为etcd替代方案，与Clusterpedia、Kueue等项目共同构建了大规模集群的优化体系；Submariner、Cilium等则提供了多集群网络连接的不同技术路径。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "KubeBrain, Clusterpedia, Submariner, Cilium, Clusternet, Liqo, Karmada, Istio, Kueue, Volcano, YuniKorn, KEDA, Karpenter, Harbor, CoreDNS, OPA, Kyverno, KWOK, Kubemark",
+      "description": "面向架构师和技术管理者。该演讲探讨了超大规模集群和多集群架构的挑战与解决方案，属于云原生应用基础设施分类。演讲中，KubeBrain作为etcd替代方案，与Clusterpedia、Submariner、Cilium等项目共同构建了大规模集群的优化体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes, etcd, Cilium, Submariner, Clusternet, Liqo, KubeBrain, Karpenter, KEDA, KWOK, Harbor, CoreDNS, OPA, Kyverno",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群架构的挑战与解决方案，属于编排与管理分类。演讲中，Kubernetes作为核心编排平台，与etcd、Cilium、Submariner等项目协同解决大规模集群的网络、调度和元数据管理问题。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "KubeBrain, Clusterpedia, Submariner, Cilium, Clusternet, Liqo",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模Kubernetes集群和多集群架构的优化方案，属于深度技术分类。演讲中，KubeBrain作为etcd替代方案，与Clusterpedia等工具共同解决元数据存储瓶颈；Submariner、Cilium、Clusternet、Liqo则分别从网络连接、高性能数据平面、应用治理和资源扩展等维度构建多集群解决方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes, etcd, Cilium, Submariner, Clusternet, Liqo, KubeBrain, Karpenter, KEDA, KWOK, Harbor, CoreDNS, OPA, Kyverno",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲深入探讨了超大规模和多集群场景下的网络、调度、存储等核心挑战与解决方案，属于云原生全景图中的编排与管理分类。演讲中，Kubernetes作为基础平台，与etcd、Cilium、Submariner等项目共同构建了大规模集群的优化与多集群互联体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "KubeBrain, Kine, Clusterpedia, Submariner, Cilium, Clusternet, Liqo, Karmada, Kueue, Volcano, YuniKorn, Karpenter, KEDA, KWOK, Kubemark, Harbor, CRProxy, OPA, Kyverno",
+      "description": "面向架构师和技术管理者。该演讲深入探讨了超大规模集群和多集群架构的挑战与解决方案，属于复杂系统分类。演讲中，KubeBrain、Kine等作为etcd替代方案，与Submariner、Cilium等多集群网络方案共同构建了大规模分布式系统的基础设施。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "01-超大集群还是多集群？如何定位关键瓶颈-徐俊杰（DaoCloud），郭奇峰（DaoCloud）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "KubeBrain, Kine, Clusterpedia, Karpenter, KEDA, KWOK, Kubemark, Harbor, Submariner, Cilium, Clusternet, Liqo",
+      "description": "面向运维工程师和架构师。该演讲探讨了超大规模集群和多集群部署的挑战与解决方案，属于部署分类。演讲中，KubeBrain、Kine等作为etcd替代方案，与Submariner、Cilium等多集群网络方案共同构建了大规模部署体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows, Kubeflow",
+      "description": "面向开发工程师和架构师。该演讲主要介绍使用Python构建可维护的ML工作流，属于编排与管理分类。演讲中，Argo Workflows作为底层编排引擎，与Kubeflow Pipelines等MLOps框架协同，实现ML管线的自动化。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了使用Python构建Argo Workflows的ML管道，属于App Definition and Development分类。演讲中，Argo Workflows作为核心编排引擎，通过Hera库实现工作流即代码的转换。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了使用Python构建Argo Workflows来管理ML管道，属于Platform分类中的工作流编排。演讲中，Argo Workflows作为核心编排引擎，通过Hera库实现Python代码到工作流的转换，提升了开发效率和可维护性。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了使用Python构建动态ML工作流，属于Special分类中的Argo Workflows项目。演讲中，Argo Workflows作为核心编排引擎，通过Hera库实现Python代码到工作流的无缝转换。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了Argo Workflows在MLOps场景下的应用，属于CNCF Members分类。演讲中，Argo Workflows作为核心编排引擎，与Hera工具结合实现了从YAML到Python的转型。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍使用Python构建动态ML工作流，属于CNAI分类中的工作流编排项目。演讲中，Argo Workflows作为底层编排引擎，通过Hera库实现Python代码到工作流的转换。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了使用Python构建动态ML工作流，属于编排与调度分类。演讲中，Argo Workflows作为底层编排引擎，通过Hera库实现Python代码到工作流的转换。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了使用Python构建动态ML工作流，属于deep分类中的工作流编排领域。演讲中，Argo Workflows作为底层编排引擎，通过Hera库实现Python化的工作流定义和类型安全的数据传递。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍使用Python构建Argo Workflows的ML管道，属于编排与调度分类。演讲中，Argo Workflows作为核心编排引擎，通过Hera库实现Python化的工作流定义。",
+      "case": true,
+      "deep": 4,
+      "audience": "开发工程师",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍使用Python构建动态ML工作流，属于diffcult分类中的工作流编排技术。演讲中，Argo Workflows作为底层编排引擎，通过Hera库实现Python代码到工作流的转换。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "02-Pythonic Argo_ Building Maintainable and Dynamic ML Pipelines as Code-Shuangkun Tian，Lei Hou（Alicloud）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Argo Workflows",
+      "description": "面向开发工程师和架构师。该演讲主要介绍使用Python构建动态ML工作流，属于部署分类中的工作流编排。演讲中，Argo Workflows作为核心编排引擎，与Hera库结合实现工作流即代码。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理调度平台实践，属于Provisioning分类中的基础设施自动配置和管理范畴。演讲中，Karmada作为多云多集群编排核心，与自研的BRS抽象层协同构建了全球异构资源统一纳管体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Virtual Kubelet",
+      "description": "面向架构师和技术管理者。该演讲介绍了基于Karmada和JuiceFS的全球AI推理引擎架构，其中Virtual Kubelet作为Runtime层的关键组件，用于抽象和管理异构计算资源。演讲中，Virtual Kubelet与Karmada协同，实现了多云资源的统一调度和管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理调度平台实践，属于编排与管理分类。演讲中，Karmada作为核心编排框架，与自研的BRS抽象层和调度系统协同，构建了全球异构资源统一管理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理平台在AI推理场景下的实践，属于应用定义与开发分类。演讲中，Karmada作为核心编排框架，与自研的BRS抽象层和调度系统共同构建了全球异构资源统一管理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多云多集群管理平台实践，属于Platform分类。演讲中，Karmada作为核心编排框架，与自研的BRS抽象层和JuiceFS共同构建了全球AI推理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada, JuiceFS",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理和JuiceFS的分布式文件系统在AI推理引擎中的应用，属于Special分类。演讲中，Karmada负责全球异构资源的统一调度，JuiceFS则提供模型数据的全球分发，两者协同构建了高效的AI推理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多云多集群管理实践，属于CNCF Members分类。演讲中，Karmada作为核心编排框架，与自研的BRS和JuiceFS共同构建了全球AI推理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲介绍了基于Karmada的多集群管理平台在AI推理场景下的实践，属于云原生AI分类。演讲中，Karmada作为多集群编排核心，与自研的BRS抽象层协同实现了全球异构资源调度。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada,JuiceFS",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada和JuiceFS构建的全球AI推理引擎，属于多云/混合云分类。演讲中，Karmada负责多云资源统一调度，JuiceFS提供全球模型数据分发，两者协同支撑AI推理场景。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada,JuiceFS",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理和JuiceFS的分布式文件系统在AI推理引擎中的应用，属于云原生调度与存储分类。演讲中，Karmada负责全球异构资源统一调度，JuiceFS提供模型数据的高效分发，两者协同构建了全球AI推理平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理调度平台实践，属于编排与调度分类。演讲中，Karmada作为核心编排框架，与自研的BRS抽象层和JuiceFS共同构建了全球AI推理引擎。",
+      "case": true,
+      "deep": 4,
+      "audience": "架构师",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada,JuiceFS",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理和JuiceFS的分布式文件系统在AI推理引擎中的实践，属于多云/混合云和存储分类。演讲中，Karmada负责全球异构资源的统一调度，JuiceFS则提供跨区域的数据分发和模型存储支持。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "10-基于Karmada + JuiceFS 的 AI 全球推理引擎管理实践-汪小康（GMICloud）、李少杰（JuiceFS）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Karmada",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了基于Karmada的多集群管理调度平台实践，属于部署分类。演讲中，Karmada作为核心编排框架，与自研的BRS抽象层和两级调度系统共同构建了全球AI推理引擎的部署体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲主要介绍了Valkey在Kubernetes上的部署和管理实践，属于编排与管理分类。演讲中，Kubernetes作为核心编排平台，结合StatefulSets、Operators等原生资源来管理Valkey集群。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲主要介绍了Valkey在Kubernetes上的部署和优化，属于Platform分类。演讲中，Valkey作为应用，依赖Kubernetes平台实现容器化部署和管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Valkey",
+      "description": "面向运维工程师和架构师。该演讲主要介绍了Valkey在Kubernetes上的高性能部署实践，属于数据库分类。演讲中，Valkey作为核心数据库，与Kubernetes、Prometheus、Grafana、Velero等工具集成，构建了完整的云原生数据库解决方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Valkey",
+      "description": "面向运维工程师和架构师。该演讲主要介绍Valkey在Kubernetes上的高性能部署，属于数据库分类。演讲中，Valkey作为核心数据库，与Kubernetes、Prometheus、Grafana、Velero等工具集成，构建完整的云原生数据存储解决方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Valkey",
+      "description": "面向运维工程师和架构师。该演讲主要介绍了Valkey在Kubernetes上的高性能部署实践，属于数据库分类。演讲中，Valkey作为核心数据库，与Kubernetes平台深度集成，展示了完整的云原生数据库部署方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "03-Valkey on Kubernetes_ High-Performance, Low-Latency Deployments for Scalable Clusters.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲详细介绍了Valkey在Kubernetes上的部署模式、性能调优和运维实践，属于部署分类。演讲中，Kubernetes作为核心部署平台，结合StatefulSets、Operators等原生资源实现Valkey集群管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes, Koordinator",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于编排与管理分类。演讲中，Kubernetes作为基础编排平台，Koordinator（或其类似技术）用于增强混部调度与QoS保障。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于Platform分类中的编排与管理核心实践。演讲围绕Kubernetes平台，结合监控、调度与隔离技术，构建了完整的混部QoS保障体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Prometheus",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于可观测性分类，通过Prometheus等工具采集业务、系统及微架构指标实现全栈可观测。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于Special分类中的调度与编排核心项目实践。演讲围绕Kubernetes平台，深入探讨了在混部场景下如何利用其调度、隔离及资源管理能力构建QoS保障体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于CNCF Members分类，因为Kubernetes是CNCF的毕业项目。演讲中，Kubernetes作为核心编排平台，结合了监控、调度和隔离技术来构建混部治理体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于CNAI分类中的容器编排与调度核心实践。演讲围绕Kubernetes平台，结合监控、调度与隔离技术，构建了完整的混部QoS保障体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于编排与调度分类。演讲围绕Kubernetes平台，深入探讨了在混部环境下保障服务质量（QoS）的实践方法。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于调度与编排分类。演讲围绕Kubernetes平台，结合监控、隔离与调度策略，构建了完整的混部干扰治理体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于编排与调度分类。演讲围绕Kubernetes平台，深入探讨了在混部环境中保障服务质量的技术实践。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理，属于调度与编排分类。演讲围绕Kubernetes平台，深入探讨了在混部环境下保障服务质量的技术实践。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "07-把吵闹邻居揪出来：Kubernetes 混部场景下的干扰检测与 SLO 治理实践-曹阳（京东）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲聚焦Kubernetes混部场景下的干扰检测与SLO治理实践，属于部署与编排分类。演讲围绕Kubernetes平台，结合监控、调度和隔离技术，构建了完整的混部治理体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和运维工程师。该演讲深入探讨Kubernetes中的Gang Scheduling机制，属于编排与管理分类的核心调度功能。演讲聚焦Kubernetes原生调度器增强，通过Workload API和PodGroup实现批量Pod协同调度。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向运维工程师和架构师。该演讲深入探讨Kubernetes的Gang Scheduling机制，属于Platform分类中的调度核心功能。演讲聚焦Kubernetes原生调度器增强，通过Workload和PodGroup API实现批量Pod协同调度。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和架构师。该演讲深入探讨Kubernetes中的Gang Scheduling技术演进，属于编排与调度分类。演讲聚焦Kubernetes核心调度器功能，通过Workload API、PodGroup等机制实现批量Pod协同调度。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和架构师。该演讲深入探讨Kubernetes中的Gang Scheduling机制，属于调度与编排分类。演讲详细介绍了Workload API、PodGroup等核心概念及其在Kubernetes版本演进中的实现路径。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和架构师。该演讲深入探讨Kubernetes中的Gang Scheduling机制，属于编排与调度分类。演讲聚焦Kubernetes核心调度器的演进，通过Workload API、PodGroup等新特性实现批量Pod的协同调度。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和架构师。该演讲深入探讨Kubernetes中的Gang Scheduling技术演进，属于调度与编排分类。演讲聚焦Kubernetes核心调度器功能演进，涉及Workload API、PodGroup等核心概念与JobSet、LWS等上层项目的集成关系。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "08-Gang Scheduling in Kubernetes - What’s Happening and What Comes Next-范宝发（DaoCloud）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "Kubernetes",
+      "description": "面向开发工程师和架构师。该演讲深入探讨Kubernetes中的Gang Scheduling技术演进，属于部署分类。演讲聚焦Kubernetes核心调度器如何通过Workload API和PodGroup实现批量Pod的协同部署。",
+      "case": false,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化，属于Runtime分类中的容器运行时存储组件。演讲聚焦etcd自身的内核级优化，未涉及与其他Runtime项目的直接集成关系。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化，属于编排与管理分类中的核心存储组件。演讲聚焦etcd自身的内核级优化，未涉及与其他项目的集成关系。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向架构师和开发工程师。该演讲聚焦etcd在AI集群中的性能优化，属于App Definition and Development中的核心存储组件。演讲深入探讨了etcd的内核机制、社区方案对比及蚂蚁集团的工程实践。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨了etcd在大规模AI集群中的性能优化，属于Platform分类中的核心存储组件。演讲聚焦etcd内核级优化，未涉及多个项目间关系。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲聚焦etcd在大规模AI集群中的性能优化，属于Special分类中的核心存储项目。演讲深入探讨了etcd在极端场景下的内核级改进和工程化解决方案。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化，属于CNCF Members分类中的核心项目。演讲聚焦etcd自身的内核级优化，未涉及与其他CNCF项目的直接集成关系。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨了etcd在大规模AI集群中的性能优化，属于云原生存储与数据库分类。演讲聚焦etcd内核级优化，包括数据拆分、Compaction改进和社区bug修复。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲聚焦etcd在大规模AI集群中的性能优化，属于数据库与数据流分类。演讲深入探讨了etcd内核机制、社区前沿问题及蚂蚁集团的工程实践。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化与内核级改进，属于数据库与数据存储分类。演讲聚焦etcd单项目的内部机制优化，未涉及多项目协作。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化，属于数据库与数据流分类。演讲聚焦etcd内核级优化，包括Compaction机制改进、Lease机制调优等核心性能提升方案。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能极限挑战与内核级优化，属于数据库与存储分类。演讲聚焦etcd单点性能瓶颈，通过数据流量拆分、内核优化和社区前沿修复，提升大规模场景下的稳定性和性能。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 3
+    }
+  },
+  {
+    "markdown_file": "11-Etcd大规模集群中性能挑战与内核级突破-汪扬（蚂蚁）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "etcd",
+      "description": "面向运维工程师和架构师。该演讲深入探讨etcd在大规模AI集群中的性能优化，属于deployment分类中的核心存储组件。演讲聚焦etcd自身的内核级优化，未涉及与其他项目的协同关系。",
+      "case": true,
+      "deep": 5,
+      "audience": "混合",
+      "diffcult": 5,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Provisioning",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt, Dragonfly",
+      "description": "面向运维工程师、架构师和技术管理者。该演讲主要介绍了智元机器人基于OpenYurt的云边协同实践，属于Provisioning分类中的基础设施自动化配置和管理。演讲中，OpenYurt作为云边协同基础平台，与Dragonfly共同优化了模型分发效率。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Runtime",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于Runtime分类中的容器运行时和网络管理。演讲中，OpenYurt作为核心平台，结合Dragonfly等工具优化了云边通信和资源调度。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Orchestration & Management",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于编排与管理分类。演讲中，OpenYurt作为核心编排平台，与Dragonfly等工具协同解决了具身智能规模化落地的挑战。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "App Definition and Development",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于App Definition and Development分类。演讲中，OpenYurt作为云边协同平台，与Dragonfly共同优化了模型分发流程。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Platform",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于Platform分类。演讲中，OpenYurt作为基础平台，与Dragonfly等工具共同构建了具身智能开发体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Serverless",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Observability and Analysis",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Special",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向开发工程师、运维工程师和架构师。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于Special分类。演讲中，OpenYurt作为核心项目，与Dragonfly等工具共同构建了具身智能的云边协同平台。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "CNCF Members",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向架构师和技术管理者。该演讲主要介绍了智元机器人基于OpenYurt的云边协同实践，属于CNCF Members分类。演讲中，OpenYurt作为核心云边协同平台，支撑了GenieStudio多云跨集群具身智能开发平台的构建。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "Wasm",
+    "analysis": {
+      "is_related": false,
+      "major_project": null,
+      "description": null,
+      "case": null,
+      "deep": null,
+      "audience": null,
+      "diffcult": null,
+      "deployment": null
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "CNAI",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向架构师和技术管理者。该演讲聚焦云边协同场景，属于CNAI分类，展示了OpenYurt在具身智能规模化中的核心作用。演讲中，OpenYurt作为边缘自治和跨域通信的基础，与Dragonfly等工具协同优化云边协同效率。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "case",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于云原生边缘计算分类。演讲中，OpenYurt作为核心平台，与Dragonfly等工具协同优化了云边通信和资源管理。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "deep",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向开发工程师和架构师。该演讲聚焦OpenYurt在云边协同场景的应用，属于云原生边缘计算分类。演讲中，OpenYurt作为核心平台，结合Dragonfly优化模型分发，构建了完整的云边协同解决方案。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "audience",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于云原生边缘计算分类。演讲中，OpenYurt作为核心平台，与Kubernetes和Dragonfly共同构建了具身智能的云边协同体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "diffcult",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向架构师和技术管理者。该演讲聚焦云边协同场景，属于diffcult分类，展示了OpenYurt在具身智能规模化中的核心作用。演讲中，OpenYurt作为边缘自治和跨域通信的基础，与Dragonfly等工具协同优化云边协同效率。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  },
+  {
+    "markdown_file": "12-迈向具身智能规模化：智元机器人基于 OpenYurt 的云边协同实践-蒋晨曦（智元机器人）、唐炳昌（阿里云）.md",
+    "category": "deployment",
+    "analysis": {
+      "is_related": true,
+      "major_project": "OpenYurt",
+      "description": "面向开发工程师和架构师。该演讲主要介绍了OpenYurt在云边协同场景下的应用，属于部署分类。演讲中，OpenYurt作为核心框架，与Kubernetes和Dragonfly共同构建了具身智能的云边协同部署体系。",
+      "case": true,
+      "deep": 4,
+      "audience": "混合",
+      "diffcult": 4,
+      "deployment": 4
+    }
+  }
+]

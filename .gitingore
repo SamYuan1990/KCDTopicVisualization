@@ -1,0 +1,8 @@
+.venv
+bak
+build/*
+CN/*
+landscape
+markdown
+cncf-landscape-horizontal-color.svg
+cncf-white.svg

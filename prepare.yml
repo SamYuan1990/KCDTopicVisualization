@@ -1,0 +1,816 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cncf/landscape2/refs/heads/main/docs/config/schema/data.schema.json
+
+landscape:
+  - category:
+    name: Provisioning
+    subcategories:
+      - name: Automation & Configuration
+        items: []
+        projects:
+          - KubeEdge (graduated)
+          - Cloud Custodian (incubating)
+          - metal3-io (incubating)
+          - OpenYurt (incubating)
+          - Akri (sandbox)
+          - Atlantis (sandbox)
+          - Cadence Workflow (sandbox)
+          - CDK for Kubernetes (CDK8s) (sandbox)
+          - DevStream (archived)
+          - kagent (sandbox)
+          - Kairos (sandbox)
+          - KCL (sandbox)
+          - KitOps (sandbox)
+          - kpt (sandbox)
+          - Kubean (sandbox)
+          - KubeDL (archived)
+          - KusionStack (sandbox)
+          - Meshery (sandbox)
+          - OpenTofu (sandbox)
+          - Runme Notebooks (sandbox)
+          - SuperEdge (archived)
+          - Tinkerbell (sandbox)
+        keywords:
+          - "Infrastructure-as-Code (IaC)"
+          - "Automation"
+          - "Declarative Configuration"
+        content: |
+          #### What it is
+
+          Automation and configuration tools speed up the creation and configuration of compute
+          resources (virtual machines, networks, firewall rules, load balancers, etc.). Tools in
+          this category either handle different parts of the provisioning process or try to control
+          everything end-to-end. Most provide the ability to integrate with other projects and
+          products in the space.
+
+          #### Problem it addresses
+
+          Traditionally, IT processes relied on lengthy and labor intensive manual release cycles,
+          typically between three to six months. Those cycles came with lots of human processes and
+          controls that slowed down changes to production environments. These slow release cycles
+          and static environments aren't compatible with cloud native development. To deliver on
+          rapid development cycles, infrastructure must be provisioned dynamically and without
+          human intervention.
+
+          #### How it helps
+
+          Tools of this category allow engineers to build computing environments without human
+          intervention. By codifying the environment setup it becomes reproducible with the click
+          of a button. While manual setup is error prone, once codified, environment creation
+          matches the exact desired state -- a huge advantage.
+
+          While tools may take different approaches, they all aim at reducing the required work
+          to provision resources through automation.
+
+          #### Technical 101
+
+          As we move from old-style human-driven provisioning to a new on-demand scaling model
+          driven by the cloud, the patterns and tools we used before no longer meet our needs.
+          Most organizations can't afford a large 24x7 staff to create, configure, and manage
+          servers. Automated tools like Terraform reduce the level of effort required to scale
+          tens of servers and networks with hundreds of firewall rules. Tools like Puppet, Chef,
+          and Ansible provision and/or configure these new servers and applications
+          programmatically as they are spun up and allow them to be consumed by developers.
+
+          Some tools interact directly with the infrastructure APIs provided by platforms like
+          AWS or vSphere, while others focus on configuring the individual machines to make them
+          part of a Kubernetes cluster. Many, like Chef and Terraform, can interoperate to provision
+          and configure the environment. Others, like OpenStack, exist to provide an
+          Infrastructure-as-a-Service (IaaS) environment that other tools could consume.
+          Fundamentally, you'll need one or more tools in this space as part of laying down the
+          computing environment, CPU, memory, storage, and networking, for your Kubernetes clusters.
+          You'll also need a subset of these to create and manage the Kubernetes clusters
+          themselves.
+
+          There are now over 5 CNCF projects in this space, more if you count projects like Cluster
+          API which don't appear on the landscape. There is also a very robust set of other open
+          source and vendor provided tools.
+      - name: Container Registry
+        items: []
+        projects:
+          - Dragonfly (graduated)
+          - Harbor (graduated)
+          - Distribution (sandbox)
+          - zot (sandbox)
+        keywords:
+          - "Container"
+          - "OCI Image"
+          - "Registry"
+        content: |
+          #### What it is
+          Before diving into container registries, we need to define three tightly related concepts:
+
+          Container is "a running process with resource and capability constraints managed by a computer's operating system" (Cloud Native Glossary).
+          Image is a set of archive files needed to run containers and its process. You could see it as a form of template on which you can create an unlimited number of containers.
+          Repository, or just repo, is a space to store images.
+          And container registries are specialized web applications that categorize and store repositories.
+
+          Let's recap real quick: images contain the information needed to execute a program (within a container) and are stored in repositories which in turn are categorized and grouped in registries. Tools that build, run, and manage containers need access to those images. Access is provided by referencing the registry (the path to access the image).
+
+          #### Problem it addresses
+          Cloud native applications are packaged and run as containers. Container registries store and provide the container images needed to run these apps.
+
+          #### How it helps
+          By centrally storing all container images in one place, they are easily accessible for any developer working on that app.
+
+          #### Technical 101
+          Container registries either store and distribute images or enhance an existing registry in some way. Fundamentally, a registry is a web API that allows container runtimes to store and retrieve images. Many provide interfaces to allow container scanning or signing tools to enhance the security of the images they store. Some specialize in distributing or duplicating images in a particularly efficient manner. Any environment using containers will need to use one or more registries.
+
+          Tools in this space provide integrations to scan, sign, and inspect the images they store. Dragonfly and Harbor are CNCF projects and Harbor recently gained the distinction of being the first OCI compliant registry. Each major cloud provider provides its own hosted registry and many other registries can be deployed standalone or directly into your Kubernetes cluster via tools like Helm.
+      - name: Security & Compliance
+        items: []
+        projects:
+          - cert-manager (graduated)
+          - Falco (graduated)
+          - in-toto (graduated)
+          - Kyverno (graduated)
+          - Open Policy Agent (OPA) (graduated)
+          - The Update Framework (TUF) (graduated)
+          - Keycloak (incubating)
+          - Kubescape (incubating)
+          - Notary Project (incubating)
+          - OpenFGA (incubating)
+          - Bank-Vaults (sandbox)
+          - bpfman (sandbox)
+          - Cartography (sandbox)
+          - Cedar (sandbox)
+          - Confidential Containers (sandbox)
+          - ContainerSSH (sandbox)
+          - Copa (sandbox)
+          - Curiefense (archived)
+          - Dex (sandbox)
+          - external-secrets (sandbox)
+          - Hexa (sandbox)
+          - Keylime (sandbox)
+          - KubeArmor (sandbox)
+          - Kubewarden (sandbox)
+          - OAuth2 Proxy (sandbox)
+          - Open Policy Containers (sandbox)
+          - OSCAL-COMPASS (sandbox)
+          - Paralus (sandbox)
+          - Parsec (sandbox)
+          - Ratify (sandbox)
+          - SlimToolkit (sandbox)
+          - SOPS (sandbox)
+          - Tokenetes (sandbox)
+        keywords:
+          - "Image scanning"
+          - "Image signing"
+          - "Policy enforcement"
+          - "Audit"
+          - "Certificate Management"
+        content: |
+          #### What it is
+          Cloud native applications are designed to be rapidly iterated on. Think of your mobile phone's continuous flow of app updates — they evolve everyday, presumably getting better. In order to release code on a regular cadence you must ensure that the code and operating environment are secure and only accessed by authorized engineers. Tools and projects in this section provide some of the abilities needed to build and run modern applications securely.
+
+          #### Problem it addresses
+          Security and compliance tools help harden, monitor, and enforce platform and application security. From containers to Kubernetes environments, these tools allow you to set policy (for compliance), get insights into existing vulnerabilities, catch misconfigurations, and harden the containers and clusters.
+
+          #### How it helps
+          To run containers securely, containers must be scanned for known vulnerabilities and signed to ensure they haven't been tampered with. Kubernetes has extremely permissive access control settings by default that are unsuitable for production use. The result: Kubernetes clusters are an attractive target for anyone looking to attack your systems. The tools and projects in this space help harden the cluster and detect when the system is behaving abnormally.
+
+          #### Technical 101
+          - Audit and compliance
+          - Path to production:
+            - Code scanning
+            - Vulnerability scanning
+            - Image signing
+
+          - Policy creation and enforcement
+          - Network layer security
+
+          Some of these tools are rarely used directly. Trivy, Claire, and Notary, for example, are leveraged by registries or other scanning tools. Others represent key hardening components of a modern application platform. Examples include Falco or Open Policy Agent (OPA).
+
+          You'll find a number of mature vendors providing solutions in this space, as well as startups founded explicitly to bring Kubernetes native frameworks to market. At the time of this writing Falco, Notary/TUF, and OPA are CNCF projects in this space.
+      - name: Key Management
+        items: []
+        projects:
+          - SPIFFE (graduated)
+          - SPIRE (graduated)
+          - Athenz (sandbox)
+          - Teller (archived)
+        keywords:
+          - "AuthN and AuthZ"
+          - "Identity"
+          - "Access"
+          - "Secrets"
+        content: |
+          #### What it is
+          Before digging into key management, let's first define cryptographic keys. A key is a string of characters used to encrypt or sign data. Like a physical key, it locks (encrypts) data so that only someone with the right key can unlock (decrypt) it.
+
+          As applications and operations adapt to a new cloud native world, security tools are evolving to meet new security needs. The tools and projects in this category cover everything from how to securely store passwords and other secrets (sensitive data such as API keys, encryption keys, etc.) to how to safely eliminate passwords and secrets from your microservices environment.
+
+          #### Problem it addresses
+          Cloud native environments are highly dynamic, requiring on-demand secret distribution. That means it has to be entirely programmatic (no humans in the loop) and automated.
+
+          Additionally, applications need to know if a given request comes from a valid source (authentication) and if that request has the right to do whatever it's trying to do (authorization). This is commonly referred to as AuthN and AuthZ.
+
+          #### How it helps
+          Each tool or project takes a different approach but they all provide a way to either securely distribute secrets and keys or a service or specification related to authentication, authorization, or both.
+
+          #### Technical 101
+          Tools in this category can be grouped into two sets: 1) key generation, storage, management, and rotation, and 2) single sign-on and identity management. Vault, for example, is a rather generic key management tool allowing you to manage different types of keys. Keycloak, on the other hand, is an identity broker which can be used to manage access keys for different services.
+    content: |
+      Provisioning is the first layer in the cloud native landscape. It encompasses tools that are used to create and harden the foundation on which cloud native apps are built. You'll find tools to automatically configure, create, and manage the infrastructure, as well as for scanning, signing, and storing container images. The layer also extends to security with tools that enable policy setting and enforcement, embedded authentication and authorization, and the handling of secrets distribution. That's a mouthful, so let's discuss each category at a time.
+  - category:
+    name: Runtime
+    subcategories:
+      - name: Cloud Native Storage
+        items: []
+        projects:
+          - CubeFS (graduated)
+          - Rook (graduated)
+          - Longhorn (incubating)
+          - Carina (sandbox)
+          - Curve (archived)
+          - HwameiStor (sandbox)
+          - K8up (sandbox)
+          - Kanister (sandbox)
+          - OpenEBS (sandbox)
+          - ORAS (sandbox)
+          - Piraeus Datastore (sandbox)
+          - Vineyard (sandbox)
+        keywords:
+          - "Backup and restore"
+          - "Persistent Volume"
+          - "CSI"
+          - "Storage API"
+        content: |
+          #### What it is
+          Storage is where the persistent data of an app is stored, often referred to as a persistent volume. To function reliably, applications need to have easy access to storage. Generally, when we say persistent data, we mean storing things like databases, messages, or any other information we want to ensure doesn't disappear when an app gets restarted.
+
+          #### Problem it addresses
+          Cloud native architectures are fluid, flexible, and elastic, making persisting data between restarts challenging. To scale up and down or self-heal, containerized apps are continuously created and deleted, changing physical location over time. That's why cloud native storage must be provided node-independently. To store data, though, you'll need hardware, a disk to be specific, and disks, just like any other hardware, are infrastructure-bound — our first big challenge.
+
+          Then there is the actual storage interface which can change significantly between datacenters (in the old world, each infrastructure had their own storage solution with its own interface), making portability really tough.
+
+          And lastly, manual provisioning and autoscaling aren't compatible, so, to benefit from the elasticity of the cloud, storage must be provisioned automatically.
+
+          Cloud native storage is tailored to this new cloud native reality.
+
+          #### How it helps
+          The tools in this category help either:
+
+          1. Provide cloud native storage options for containers,
+          2. Standardize the interfaces between containers and storage providers, or
+          3. Provide data protection through backup and restore operations.
+          The former means storage that uses a cloud native compatible container storage interface (tools in the second category) and which can be provisioned automatically, enabling autoscaling and self-healing by eliminating the human bottleneck.
+
+          #### Technical 101
+          Cloud native storage is largely made possible by the Container Storage Interface (CSI) which provides a standard API for providing file and block storage to containers. There are a number of tools in this category, both open source and vendor-provided, that leverage the CSI to provide on-demand storage for containers.
+
+          Additionally, there are technologies aiming to solve other cloud native storage challenges. Minio is a popular project that provides an S3-compatible API for object storage among other things. Tools like Velero help simplify the process of backing up and restoring both the Kubernetes clusters themselves as well as persistent data used by the applications.
+      - name: Container Runtime
+        items: []
+        projects:
+          - containerd (graduated)
+          - CRI-O (graduated)
+          - Lima (incubating)
+          - composefs (sandbox)
+          - bootc (sandbox)
+          - Hyperlight (sandbox)
+          - Inclavare Containers (sandbox)
+          - Krustlet (archived)
+          - Kuasar (sandbox)
+          - Podman Container Tools (sandbox)
+          - rkt (archived)
+          - urunc (sandbox)
+          - Virtual Kubelet (sandbox)
+          - Interlink (sandbox)
+          - WasmEdge Runtime (sandbox)
+          - youki (sandbox)
+        keywords:
+          - "Container"
+          - "MicroVM"
+        content: |
+          #### What it is
+          As discussed under container registry, a container is a set of compute constraints used to execute (or launch) an application. Containerized apps believe they are running on their own dedicated computer and are oblivious that they are sharing resources with other processes (similar to virtual machines).
+
+          The container runtime is the software that executes containerized (or "constrained") applications. Without the runtime, you only have the container image, the at-rest file specifying how the containerized app should look like. The runtime will start an app within a container and provide it with the needed resources.
+
+          #### Problem it addresses
+          Container images (the files with the application specs) must be launched in a standardized, secure, and isolated way. Standardized because you need standard operating rules no matter where they are running. Secure, well, because you don't want anyone who shouldn't access it to do so. And isolated because you don't want the app to affect or be affected by other apps (for instance, if a co-located application crashes). Isolation basically functions as protection. Additionally, the application needs to be provided resources, such as CPU, storage, and memory.
+
+          #### How it helps
+          The container runtime does all that. It launches apps in a standardized fashion across all environments and sets security boundaries. The latter is where some of these tools differ. Runtimes like CRI-O or gVisor have hardened their security boundaries. The runtime also sets resource limits for the container. Without it, the app could consume resources as needed, potentially taking resources away from other apps, so you always need to set limits.
+
+          #### Technical 101
+          Not all tools in this category are created equal. Containerd (part of the famous Docker product) and CRI-O are standard container runtime implementations. Then there are tools that expand the use of containers to other technologies, such as Kata which allows you to run containers as VMs. Others aim at solving a specific container-related problem such as gVisor which provides an additional security layer between containers and the OS.
+      - name: Cloud Native Network
+        items: []
+        projects:
+          - Cilium (graduated)
+          - Container Network Interface (CNI) (incubating)
+          - Antrea (sandbox)
+          - CNI-Genie (archived)
+          - FabEdge (archived)
+          - Kube-OVN (sandbox)
+          - kube-vip (sandbox)
+          - Network Service Mesh (sandbox)
+          - OVN-Kubernetes (sandbox)
+          - Spiderpool (sandbox)
+          - Submariner (sandbox)
+        keywords:
+          - "SDN"
+          - "Network Overlay"
+          - "CNI"
+        content: |
+          #### What it is
+          Containers talk to each other and to the infrastructure layer through a cloud native network. Distributed applications have multiple components that use the network for different purposes. Tools in this category create a virtual network on top of existing networks specifically for apps to communicate, referred to as an overlay network.
+
+          #### Problem it addresses
+          While it's common to refer to the code running in a container as an app, the reality is that most containers hold only a small specific set of functionalities of a larger application. Modern applications such as Netflix or Gmail are composed of a number of these smaller components each running in its own container. To allow all these independent pieces to function as a cohesive application, containers need to communicate with each other privately. Tools in this category provide that private communication network.
+
+          Data and messages flowing between containers may have sensitive or private data. Because cloud native networking uses software for controlling, inspecting and modifying data flows, it is a lot easier to manage, secure and isolate connections between containers. In some cases you may want to extend your container networks and network policies such as firewall and access rules to allow an app to connect to virtual machines or services running outside the container network. The programmable and often declarative nature of cloud native networking makes this possible.
+
+          #### How it helps
+          Projects and products in this category use the Container Network Interface (CNI), a CNCF project, to provide networking functionalities to containerized applications. Some tools, like Flannel, are rather minimalist, providing bare bones connectivity to containers. Others, such as NSX-T provide a full software-defined networking layer creating an isolated virtual network for every Kubernetes namespace.
+
+          At a minimum, a container network needs to assign IP addresses to pods (that's where containerized apps run in Kubernetes), allowing other processes to access it.
+
+          #### Technical 101
+          The variety and innovation in this space is largely made possible by the CNI (similar to storage and the Container Storage Interface mentioned above).The CNI standardizes the way network layers provide functionalities to pods. Selecting the right container network for your Kubernetes environment is critical and you've got a number of tools to choose from. Weave Net, Antrea, Calico, and Flannel all provide effective open source networking layers. Their functionalities vary widely and your choice should be ultimately driven by your specific needs.
+
+          Numerous vendors support and extend Kubernetes networks with Software Defined Networking (SDN) tools, providing additional insights into network traffic, enforcing network policies, and even extending container networks and policies to your broader datacenter.
+    content: |
+      Now that we've established the foundation of a cloud native environment, we'll move one infrastructure layer up and zoom into the runtime layer. It encompasses everything a container needs to run in a cloud native environment. That includes the code used to start a container, referred to as a container runtime; tools to make persistent storage available to containers; and those that manage the container environment networks.
+      But note, these resources are not to be confused with the networking and storage work handled by the provisioning layer discussed above. Those focused on getting the container platform running. Tools in this category are used to start and stop containers, help them store data, and allow them to talk to each other.
+  - category:
+    name: Orchestration & Management
+    subcategories:
+      - name: Scheduling & Orchestration
+        items: []
+        projects:
+          - Crossplane (graduated)
+          - KEDA (graduated)
+          - Knative (graduated)
+          - Kubernetes (graduated)
+          - Fluid (incubating)
+          - Karmada (incubating)
+          - Kubeflow (incubating)
+          - Volcano (incubating)
+          - wasmCloud (incubating)
+          - Armada (sandbox)
+          - Capsule (sandbox)
+          - CoHDI (sandbox)
+          - Clusternet (sandbox)
+          - Clusterpedia (sandbox)
+          - Cozystack (sandbox)
+          - Eraser (sandbox)
+          - hami (sandbox)
+          - kcp (sandbox)
+          - k0s (sandbox)
+          - KAI Scheduler (sandbox)
+          - Koordinator (sandbox)
+          - kube-rs (sandbox)
+          - KubeFleet (sandbox)
+          - KubeSlice (sandbox)
+          - KubeStellar (sandbox)
+          - Kured (sandbox)
+          - Open Cluster Management (sandbox)
+          - OpenFunction (sandbox)
+          - Serverless Devs (sandbox)
+        keywords:
+          - "Cluster"
+          - "Scheduler"
+          - "Orchestration"
+        content: |
+          #### What it is
+          Orchestration and scheduling refer to running and managing containers across a cluster. A cluster is a group of machines, physical or virtual, connected over a network (see cloud native networking).
+
+          Container orchestrators (and schedulers) are somewhat similar to the operating system (OS) on your laptop. The OS manages all your apps such as Microsoft 365, Slack and Zoom; executes them, and schedules when each app gets to use your laptop's hardware resources like CPU, memory and storage.
+
+          While running everything on a single machine is great, most applications today are a lot bigger than one computer can possibly handle. Think Gmail or Netflix. These massive apps are distributed across multiple machines forming a distributed application. Most modern-day applications are built this way, requiring software that is able to manage all components running across these different machines. In short, you need a "cluster OS." That's where orchestration tools come in.
+
+          #### Problem it addresses
+          As mentioned in the section 'cloud native networking', in cloud native architectures, applications are broken down into small components, or services, each placed in a container. You may have heard of them referred to as microservices. Instead of having one big app (often known as a 'monolith') you now have dozens or even hundreds of (micro)services. And each of these services needs resources, monitoring, and fixing if a problem occurs. While it may be feasible to do all those things manually for a single service, you'll need automated processes when dealing with multiple services, each with its own containers.
+
+          #### How it helps
+          Container orchestrators automate container management. But what does that mean in practice? Let's answer that for Kubernetes since it is the de facto container orchestrator.
+
+          Kubernetes does something called desired state reconciliation: it matches the current state of containers within a cluster to the desired state. The desired state is specified by the engineer (e.g. ten instances of service A running on three nodes, i.e. machines, with access to database B, etc.) and continuously compared against the actual state. If the desired and actual state don't match, Kubernetes reconciles them by creating or destroying objects. For example, if a container crashes, Kubernetes will spin up a new one.
+
+          In short, Kubernetes allows you to treat a cluster as one computer. It focuses only on what that environment should look like and handles the implementation details for you.
+
+          #### Technical 101
+          Kubernetes lives in the orchestration and scheduling section along with other less widely adopted orchestrators like Docker Swarm and Mesos. It enables users to manage a number of disparate computers as a single pool of resources in a declarative way. Declarative configuration management in Kubernetes is handled via control loops, a pattern in which a process running in Kubernetes monitors the Kubernetes store for a particular object type and ensures the actual state in the cluster matches the desired state.
+
+          As an example, a user creates a Kubernetes deployment that states there must be 3 copies of a web application. The deployment controller will ensure that those 3 web application containers get created then continue to monitor the cluster to see if the number of containers is correct. If a particular container gets removed for any reason the deployment controller will cause a new instance to be created. Alternatively if the deployment is modified to scale down to 1 web app instance it will instruct Kubernetes to delete 2 of the running web apps.
+
+          This core controller pattern can also be used to extend Kubernetes by users or software developers. The operator pattern allows people to write custom controllers for custom resources and build any arbitrary logic, and automation, into kubernetes itself.
+
+          While Kubernetes isn't the only orchestrator the CNCF hosts (both Crossplane and Volcano are incubating projects), it is the most commonly used and actively maintained orchestrator.
+      - name: Coordination & Service Discovery
+        items: []
+        projects:
+          - CoreDNS (graduated)
+          - etcd (graduated)
+          - k8gb (sandbox)
+          - Oxia (sandbox)
+          - Xline (archived)
+        keywords:
+          - "DNS"
+          - "Service Discovery"
+        content: |
+          #### What it is
+          Modern applications are composed of multiple individual services that need to collaborate to provide value to the end user. To collaborate, they communicate over a network (see cloud native networking), and to communicate, they must first locate one another. Service discovery is the process of figuring out how to do that.
+
+          #### Problem it addresses
+          Cloud native architectures are dynamic and fluid, meaning they are constantly changing. When a container crashes on one node, a new container is spun up on a different node to replace it. Or, when an app scales, replicas are spread out throughout the network. There is no one place where a particular service is — the location of everything is constantly changing. Tools in this category keep track of services within the network so services can find one another when needed.
+
+          #### How it helps
+          Service discovery tools address this problem by providing a common place to find and potentially identify individual services. There are basically two types of tools in this category:
+
+          Service discovery engines: database-like tools that store information on all services and how to locate them
+          Name resolution tools: tools that receive service location requests and return network address information (e.g. CoreDNS)
+          INFOBOX
+          In Kubernetes, to make a pod reachable a new abstraction layer called "service" is introduced. Services provide a single stable address for a dynamically changing group of pods.
+
+          Please note that "service" may have different meanings in different contexts, which can be quite confusing. The term "services" generally refers to the service placed inside a container and pod. It's the app component or microservice with a specific function within the actual app, for example your mobile phone's face recognition algorithm.
+
+          A Kubernetes service is the abstraction that helps pods find and connect to each other. It is an entry point for a service (functionality) as a collection of processes or pods. In Kubernetes, when you create a service (abstraction), you create a group of pods which together provide a service (functionality within one or more containers) with a single end point (entry point) which is the Kubernetes service.
+
+          #### Technical 101
+          As distributed systems became more and more prevalent, traditional DNS processes and traditional load balancers were often unable to keep up with changing endpoint information. To make up for these shortcomings, service discovery tools handle individual application instances rapidly registering and deregistering themselves. Some options such as CoreDNS and etcd are CNCF projects and are built into Kubernetes. Others have custom libraries or tools to allow services to operate effectively.
+      - name: Remote Procedure Call
+        items: []
+        projects:
+          - gRPC (incubating)
+          - Connect RPC (sandbox)
+        keywords:
+          - "gRPC"
+        content: |
+          #### What it is
+          Remote Procedure Call (RPC) is a particular technique enabling applications to talk to each other. It's one way of structuring app communication.
+
+          #### Problem it addresses
+          Modern apps are composed of numerous individual services that must communicate in order to collaborate. RPC is one option for handling the communication between applications.
+
+          #### How it helps
+          RPC provides a tightly coupled and highly opinionated way of handling communication between services. It allows for bandwidth-efficient communications and many programming languages enable RPC interface implementations.
+
+          #### Technical 101
+          There are a lot of potential benefits with RPC: It makes coding connections easier, it allows for extremely efficient use of the network layer and well-structured communications between services. RPC has also been criticized for creating brittle connection points and forcing users to do coordinated upgrades for multiple services. gRPC is a particularly popular RPC implementation and has been adopted by the CNCF.
+      - name: Service Proxy
+        items: []
+        projects:
+          - Envoy (graduated)
+          - Contour (incubating)
+          - BFE (sandbox)
+          - LoxiLB (sandbox)
+          - MetalLB (sandbox)
+          - OpenELB (archived)
+        keywords:
+          - "Service Proxy"
+          - "Ingress"
+        content: |
+          #### What it is
+          A service proxy is a tool that intercepts traffic to or from a given service, applies some logic to it, then forwards that traffic to another service. It essentially acts as a "go-between" that can collect information about network traffic as well as apply rules to it. This can be as simple as serving as a load balancer that forwards traffic to individual applications or as complex as an interconnected mesh of proxies running side by side with individual containerized applications handling all network connections.
+
+          While a service proxy is useful in and of itself, especially when driving traffic from the broader network into a Kubernetes cluster, service proxies are also building blocks for other systems, such as API gateways or service meshes, which we'll discuss below.
+
+          #### Problem it addresses
+          Applications should send and receive network traffic in a controlled manner. To keep track of the traffic and potentially transform or redirect it, we need to collect data. Traditionally, the code enabling data collection and network traffic management was embedded within each application.
+
+          A service proxy "externalizes" this functionality. No longer does it have to live within the app. Instead, it's embedded in the platform layer (where your apps run). This is incredibly powerful because it allows developers to fully focus on writing your value-generating application code, allowing the universal task of handling traffic to be managed by the platform team, whose responsibility it should be in the first place. Centralizing the distribution and management of globally needed service functionality such as routing or TLS termination from a single common location allows communication between services to become more reliable, secure, and performant.
+
+          #### How it helps
+          Proxies act as gatekeepers between the user and services or between different services. With this unique positioning, they provide insight into what type of communication is happening and can then determine where to send a particular request or even deny it entirely.
+
+          Proxies gather critical data, manage routing (spreading traffic evenly among services or rerouting if some services break down), encrypt connections, and cache content (reducing resource consumption).
+
+          #### Technical 101
+          Service proxies work by intercepting traffic between services, applying logic on it, and allowing it to move on if permitted. Centrally controlled capabilities embedded into proxies allow administrators to accomplish several things. They can gather detailed metrics about inter-service communication, protect services from being overloaded, and apply other common standards to services, like mutual TLS. Service proxies are fundamental to other tools like service meshes as they provide a way to enforce higher-level policies to all network traffic.
+
+          Please note, the CNCF includes load balancers and ingress providers into this category.
+      - name: API Gateway
+        items: []
+        projects:
+          - Emissary-Ingress (incubating)
+          - Easegress (sandbox)
+          - Higress (sandbox)
+          - Kgateway (sandbox)
+          - Kuadrant (sandbox)
+        keywords:
+          - "API Gateway"
+        content: |
+          #### What it is
+          While humans generally interact with computer programs via a GUI (graphical user interface) such as a web page or a desktop application, computers interact with each other through APIs (application programming interfaces). But an API shouldn't be confused with an API gateway.
+
+          An API gateway allows organizations to move key functions, such as authorizing or limiting the number of requests between applications, to a centrally managed location. It also functions as a common interface to (often external) API consumers.
+
+          #### Problem it addresses
+          While most containers and core applications have an API, an API gateway is more than just an API. An API gateway simplifies how organizations manage and apply rules to all interactions.
+
+          API gateways allow developers to write and maintain less custom code (the system functionality is encoded into the API gateway, remember?). They also enable teams to see and control the interactions between application users and the applications themselves.
+
+          #### How it helps
+          An API gateway sits between the users and the application. It acts as a go-between that takes the messages (requests) from the users and forwards them to the appropriate service. But before handing the request off, it evaluates whether the user is allowed to do what they're trying to do and records details about who made the request and how many requests they've made.
+
+          Put simply, an API gateway provides a single point of entry with a common user interface for app users. It also enables you to handoff tasks otherwise implemented within the app to the gateway, saving developer time and money.
+
+          EXAMPLE
+          Take Amazon store cards. To offer them, Amazon partners with a bank that will issue and manage all Amazon store cards. In return, the bank will keep, let's say, $1 per transaction. The bank will use an API gateway to authorize the retailer to request new cards, keep track of the number of transactions for billing, and maybe even restrict the number of requested cards per minute. All that functionality is encoded into the gateway, not the services using it. Services just worry about issuing cards.
+
+          #### Technical 101
+          Like proxies and service meshes (see below), an API gateway takes custom code out of our apps and brings it into a central system. The API gateway works by intercepting calls to backend services, performing some kind of value add activity like validating authorization, collecting metrics, or transforming requests, then performing whatever action it deems appropriate.
+
+          API gateways serve as a common entry point for a set of downstream applications while at the same time providing a place where teams can inject business logic to handle authorization, rate limiting, and chargeback. They allow application developers to abstract away changes to their downstream APIs from their customers and offload tasks like onboarding new customers to the gateway.
+      - name: Service Mesh
+        items: []
+        projects:
+          - Istio (graduated)
+          - Linkerd (graduated)
+          - Aeraki Mesh (sandbox)
+          - Kmesh (sandbox)
+          - Kuma (sandbox)
+          - Merbridge (archived)
+          - Open Service Mesh (archived)
+          - Sermant (sandbox)
+          - Service Mesh Interface (SMI) (archived)
+          - Service Mesh Performance (archived)
+        keywords:
+          - "Service mesh"
+          - "Sidecar"
+          - "Data plane"
+          - "Control plane"
+        content: |
+          #### What it is
+          Service meshes manage traffic (i.e. communication) between services. They enable platform teams to add reliability, observability, and security features uniformly across all services running within a cluster without requiring any code changes.
+
+          Along with Kubernetes, service meshes have become some of the most critical infrastructure components of the cloud native stack.
+
+          #### Problem it addresses
+          In a cloud native world, we are dealing with multiple services all needing to communicate. This means a lot more traffic is going back and forth on an inherently unreliable and often slow network. To address this new set of challenges, engineers must implement additional functionality. Prior to the service mesh, that functionality had to be encoded into every single application. This custom code often became a source of technical debt and provided new avenues for failures or vulnerabilities.
+
+          #### How it helps
+          Service meshes add reliability, observability, and security features uniformly across all services on a platform layer without touching the app code. They are compatible with any programming language, allowing development teams to focus on writing business logic.
+
+          INFOBOX
+          Since traditionally, these service mesh features had to be coded into each service, each time a new service was released or updated, the developer had to ensure these features were functional, too, providing a lot of room for human error. And here's a dirty little secret, developers prefer focusing on business logic (value-generating functionalities) rather than building reliability, observability, and security features.
+          For the platform owners, on the other hand, these are core capabilities and central to everything they do. Making developers responsible for adding features that platform owners need is inherently problematic. This, by the way, also applies to general-purpose proxies and API gateways mentioned above. Service meshes and API gateways solve that very issue as they are implemented by the platform owners and applied universally across all services.
+
+          #### Technical 101
+          Service meshes bind all services running on a cluster together via service proxies creating a mesh of services, hence service mesh. These are managed and controlled through the service mesh control plane. Service meshes allow platform owners to perform common actions or collect data on applications without having developers write custom logic.
+
+          In essence, a service mesh is an infrastructure layer that manages inter-service communications by providing command and control signals to a network of service proxies (your mesh). Its power lies in its ability to provide key system functionality without having to modify the applications.
+
+          Some service meshes use a general-purpose service proxy (see above) for their data plane. Others use a dedicated proxy; Linkerd, for example, uses the Linkerd2-proxy "micro proxy" to gain an advantage in performance and resource consumption. These proxies are uniformly attached to each service through so-called sidecars. Sidecar refers to the fact that the proxy runs in its own container but lives in the same pod. Just like a motorcycle sidecar, it's a separate module attached to the motorcycle, following it wherever it goes.
+    content: |
+      Now that we've covered both the provisioning and runtime layer we can now dive into orchestration and management. Here you'll find tooling to handle running and connecting your cloud native applications. This section covers everything from Kubernetes itself, one of the key enablers of cloud native development to the infrastructure layers responsible for inter app, and external communication. Inherently scalable, cloud native apps rely on automation and resilience, enabled by these tools.
+  - category:
+    name: App Definition and Development
+    subcategories:
+      - name: Database
+        items: []
+      - name: Streaming & Messaging
+        items: []
+      - name: Application Definition & Image Build
+        items: []
+      - name: Continuous Integration & Delivery
+        items: []
+  - category:
+    name: Platform
+    subcategories:
+      - name: Certified Kubernetes - Distribution
+        items: []
+      - name: Certified Kubernetes - Hosted
+        items: []
+      - name: Certified Kubernetes - Installer
+        items: []
+      - name: Certified Kubernetes - AI Platform
+        items: []
+      - name: PaaS/Container Service
+        items: []
+  - category:
+    name: Serverless
+    subcategories:
+      - name: Security
+        items: []
+      - name: Tools
+        items: []
+      - name: Framework
+        items: []
+      - name: Hosted Platform
+        items: []
+      - name: Installable Platform
+        items: []
+  - category:
+    name: Observability and Analysis
+    subcategories:
+      - name: Feature Flagging
+        items: []
+      - name: Chaos Engineering
+        items: []
+        projects:
+          - Chaos Mesh (incubating)
+          - Litmus (incubating)
+          - Chaosblade (sandbox)
+          - Krkn (sandbox)
+        keywords:
+          - "Chaos Engineering"
+        content: |
+          #### What it is
+          Chaos engineering refers to the practice of intentionally introducing faults into a system in order to test its resilience and ensure applications and engineering teams are able to withstand turbulent and unexpected events. A chaos engineering tool will provide a controlled way to introduce faults and run specific experiments against a particular instance of an application.
+
+          #### Problem it addresses
+          Complex systems fail. They fail for a host of reasons and in a distributed system the consequences are typically hard to understand. Chaos engineering is embraced by organizations that accept that failures will occur and, instead of trying to prevent failures, practice recovering from them. This is referred to as optimizing for mean time to repair, or MTTR.
+
+          INFOBOX
+          The traditional approach to maintaining high availability for applications is referred to as optimizing for mean time between failures, or MTBF. You can observe this practice in organizations that use things like "change review boards" and "long change freezes" to keep an application environment stable by restricting changes. The authors of Accelerate suggest that high performing IT organizations achieve high availability by optimizing for mean time to recovery, or MTTR, instead.
+
+          #### How it helps
+          In a cloud native world, applications must dynamically adjust to failures, a relatively new concept. That means, when something fails, the system doesn't go down completely but gracefully degrades or recovers. Chaos engineering tools enable you to experiment on a software system in production to ensure they perform gracefully should a real failure occur.
+
+          In short, you experiment with a system because you want to be confident that it can withstand turbulent and unexpected conditions. Instead of waiting for something to happen and find out, you place it under duress in controlled conditions to identify weaknesses and fix them before chance uncovers them for you.
+
+          #### Technical 101
+          Chaos engineering tools and practices are critical to achieving high availability for your applications. Distributed systems are often too complex to be fully understood by any one engineer and no change process can fully predetermine the impact of changes on an environment. By introducing deliberate chaos engineering practices teams are able to practice and automate failure recovery. Chaos Mesh and Litmus Chaos are two CNCF tools in this space.
+      - name: Continuous Optimization
+        items: []
+      - name: Observability
+        items: []
+        projects:
+          - Fluentd (graduated)
+          - Jaeger (graduated)
+          - Prometheus (graduated)
+          - Cortex (incubating)
+          - OpenTelemetry (incubating)
+          - Thanos (incubating)
+          - Fonio (archived)
+          - Headlamp (sandbox)
+          - HolmesGPT (sandbox)
+          - Inspektor Gadget (sandbox)
+          - K8sGPT (sandbox)
+          - Kepler (sandbox)
+          - Kuberhealthy (sandbox)
+          - Logging Operator (Kube Logging) (sandbox)
+          - OpenMetrics (archived)
+          - OpenTracing (archived)
+          - Perses (sandbox)
+          - Pixie (sandbox)
+          - Skooner (archived)
+          - Trickster (sandbox)
+        keywords:
+          - "Monitoring"
+          - "Time series"
+          - "Alerting"
+          - "Metrics"
+          - "Logging"
+          - "Tracing"
+        content: |
+          #### What it is
+          Observability is the practice and ability of a system to be understood from its external outputs. Observability frameworks emit telemetry data, that is consumed by analysis tools which aid in querying or visualizing the data. These frameworks emit logs, metrics, and traces from application code, underlying node infrastructure, orchestration systems, and more. This data can be as simple as a statistic about the amount of disk space available on a node, or as complex as an end-to-end user transaction from client to server and back.
+
+          #### Problem it addresses
+          Systems are complex, and can fail or degrade in performance in many different ways. Observability allows you to understand the health of individual services or infrastructure components in a system, track important statistical values over time, debug issues in production, and much more.
+
+          #### How it helps
+          Operating cloud native systems at scale requires operators and developers to have access to high quality telemetry data about the state of the system in order to respond to incidents and make informed decisions about how to improve the system. Observability helps operators respond more quickly to incidents, helps developers debug their applications in production, and helps organizations understand user behavior and how system performance relates to business goals.
+
+          #### Technical 101
+          Cloud native observability is conceptually very similar to traditional application monitoring, but with several key differences. Objects tend to be ephemeral, and system complexity tends to increase exponentially with the number of services you're deploying. This puts a greater import on structured data and schemas as a way to determine what's happening in a system, and a greater emphasis on data storage. Many projects in this area of the landscape are designed with this model in mind, such as OpenTelemetry or Prometheus.
+    content: |
+      Now that we've worked our way through the layers of the CNCF landscape, we'll focus on the columns starting with observability and analysis.
+
+      Before diving into these categories, let's first define observability and analysis. Observability is a system characteristic describing the degree to which a system can be understood from its external outputs. Measured by CPU time, memory, disk space, latency, errors, etc., computer systems can be more or less observable. Analysis is an activity in which you look at this observable data and make sense of it.
+
+      To ensure there is no service disruption, you'll need to observe and analyze every aspect of your application so every anomaly gets detected and rectified right away. This is what this category is all about. It runs across and observes all layers which is why it's on the side and not embedded in a specific layer.
+
+      Tools in this category are broken down into observability and chaos engineering. Please note that the category name is somewhat misleading — although chaos engineering is listed here, consider it a reliability tool rather than an observability or analysis tool.
+  - category:
+    name: Special
+    subcategories:
+      - name: Kubernetes Certified Service Provider
+        items: []
+      - name: Kubernetes and Cloud Native Training Partner
+        items: []
+      - name: Certified CNFs
+        items: []
+  - category:
+    name: CNCF Members
+    subcategories:
+      - name: Platinum
+        items: []
+      - name: Gold
+        items: []
+      - name: Silver
+        items: []
+      - name: Academic
+        items: []
+      - name: Nonprofit
+        items: []
+      - name: End User Supporter and Contributor
+        items: []
+  - category:
+    name: Wasm
+    subcategories:
+      - name: Languages
+        items: []
+      - name: Runtimes
+        items: []
+      - name: Application Frameworks
+        items: []
+      - name: Edge/Bare metal
+        items: []
+      - name: AI/Machine Learning
+        items: []
+      - name: Embedded Functions
+        items: []
+      - name: Tooling
+        items: []
+      - name: Orchestration & Management
+        items: []
+      - name: Hosted Platforms
+        items: []
+      - name: Decentralized Platforms
+        items: []
+      - name: Debugging & Observability
+        items: []
+      - name: Packaging, Registries & Application Delivery
+        items: []
+  - category:
+    name: CNAI
+    subcategories:
+      - name: General Orchestration
+        items: []
+      - name: ML Serving
+        items: []
+      - name: CI/CD - Delivery
+        items: []
+      - name: Data Science
+        items: []
+      - name: Distributed Training
+        items: []
+      - name: Workload Observability
+        items: []
+      - name: Model/LLM Observability
+        items: []
+      - name: AutoML
+        items: []
+      - name: Vector Databases
+        items: []
+      - name: Data Architecture
+        items: []
+      - name: Governance, Policy & Security
+        items: []
+      - name: Open Enterprise AI Blueprints
+        items: []
+  - category:
+    name: case
+    subcategories:
+      - name: Have
+        items: []
+      - name: Not
+        items: []
+  - category:
+    name: deep
+    subcategories:
+      - name: "1 - 入门"
+        items: []
+      - name: "2 - 基础"
+        items: []
+      - name: "3 - 中级"
+        items: []
+      - name: "4 - 高级"
+        items: []
+      - name: "5 - 深度"
+        items: []
+  - category:
+    name: audience
+    subcategories:
+      - name: "运维工程师"
+        items: []
+      - name: "开发工程师"
+        items: []
+      - name: "架构师"
+        items: []
+      - name: "技术管理者"
+        items: []
+      - name: "混合"
+        items: []
+  - category:
+    name: diffcult
+    subcategories:
+      - name: "1 - 简单"
+        items: []
+      - name: "2 - 较低"
+        items: []
+      - name: "3 - 中等"
+        items: []
+      - name: "4 - 较高"
+        items: []
+      - name: "5 - 复杂"
+        items: []
+  - category:
+    name: deployment
+    subcategories:
+      - name: "1 - 理论性强"
+        items: []
+      - name: "2 - 较难落地"
+        items: []
+      - name: "3 - 一般"
+        items: []
+      - name: "4 - 易实践"
+        items: []
+      - name: "5 - 即学即用"
+        items: []

@@ -1,0 +1,57 @@
+name: Deploy Landscape2 to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main          # 当推送到 main 分支时触发
+  workflow_dispatch:   # 允许手动触发
+
+# 设置 GITHUB_TOKEN 的权限，以便部署到 Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许同时运行一个部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'          # 推荐使用 LTS 版本
+          cache: 'npm'                # 缓存 npm 依赖
+
+      - name: Install landscape2
+        run: npm install -g @cncf/landscape2
+
+      - name: Build landscape
+        # 确保所有必需的文件（result.yml, settings.yml, guide.yml, hosted_logos）存在于仓库中
+        run: |
+          landscape2 build \
+            --data-file result.yml \
+            --settings-file settings.yml \
+            --guide-file guide.yml \
+            --logos-path ./hosted_logos \
+            --output-dir build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build          # 上传构建目录作为 Pages 内容
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
