@@ -65,7 +65,7 @@ jobs:
           cp -R /tmp/landscape/* .
           
           # 如果有自定义的 index.html 或 404.html，可以在此覆盖
-          # cp index.html 404.html   # 根据需要调整
+          cp index.html 404.html   # 根据需要调整
           
           # 如果根目录有 .nojekyll 文件，可在此创建
           # touch .nojekyll
