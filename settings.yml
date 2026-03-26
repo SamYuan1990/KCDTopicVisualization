@@ -6,7 +6,9 @@
 
 foundation: CNCF
 
-url: http://samyuan1990.github.io/KCDTopicVisualization/
+url: http://samyuan1990.github.io
+
+base_path: /KCDTopicVisualization
 
 colors:
   color1: "rgba(0, 107, 204, 1)"
