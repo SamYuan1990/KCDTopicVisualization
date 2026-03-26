@@ -32,14 +32,14 @@ footer:
     twitter: "https://twitter.com/cloudnativefdn"
     wechat: "https://www.cncf.io/wechat/"
     youtube: "https://www.youtube.com/c/cloudnativefdn"
-  logo: "cncf-white.svg"
+  logo: "https://raw.githubusercontent.com/cncf/artwork/master/other/cncf/horizontal/white/cncf-white.svg"
 
 grid_items_size: large
 
 header:
   links:
     github: "https://github.com/cncf/landscape2"
-  logo: "cncf-landscape-horizontal-color.svg"
+  logo: "https://raw.githubusercontent.com/cncf/artwork/master/other/cncf-landscape/horizontal/color/cncf-landscape-horizontal-color.svg"
 
 screenshot_width: 1500
 
